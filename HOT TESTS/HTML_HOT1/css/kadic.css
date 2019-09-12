@@ -1,0 +1,32 @@
+/* Welcome to my Comments */
+
+
+* {
+  background-color: #E0FCFF;
+}
+
+h1 {
+  font-family: Helvetica, Arial;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+.change {
+  margin: 10em 20em;
+
+}
+
+nav ul li {
+  float: left;
+  padding: 20px 20px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  color: #FF6F52;
+  text-decoration: none;
+  font-family: Arial, Helvetica
+}

@@ -1,0 +1,46 @@
+/* TODO: This is my example comment */
+
+body {
+  width: 80%;
+  background-color: #FF9457;
+  font-family: sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Times New Roman"
+}
+h1 {
+  text-shadow: 1.5px 1.5px 2px gray;
+  background-image: url("../images/pillows.jpg");
+  background-repeat:repeat-x;
+  font-family: "Arial"
+
+}
+.spotlight_home {
+    border: 2px solid #0D2529;
+    font-family: sans-serif;
+}
+
+nav h1 {
+    border: solid 2px black;
+    padding: 40px 40px;
+    background-color: gray;
+}
+
+
+
+footer{
+  font-size: 10px;
+  line-height: 2px;
+  border: 2px solid #0D2529;
+  background-color: #566EE8;
+}
+
+
+
+#right_side_footer {
+  text-align: right;
+}
