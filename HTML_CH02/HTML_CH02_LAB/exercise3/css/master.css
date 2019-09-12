@@ -1,0 +1,16 @@
+* {
+  background-color: black;
+  color: white;
+}
+a {
+  background-color: gray;
+}
+h1 {
+  font-family: "Time New Roman"
+  color: gray;
+}
+
+.news {
+  font-style: italic;
+  color: red;
+}
