@@ -1,0 +1,27 @@
+*{
+  font-family: sans-serif;
+
+}
+
+.headline {
+  color: orange;
+  font-family: Arial;
+}
+
+#paragraph {
+  font-variant: small-caps;
+  color: hsla(0, 41%, 35%, 1);
+  font-family: "Times New Roman"
+}
+
+footer {
+  color: rgba(255, 0, 0, 0.5);
+  line-height: 1.4em;
+  font-family: "Comic Sans MS"
+}
+
+img:hover {
+  background-color: green;
+  width: 500px;
+  height: 200px;
+}
