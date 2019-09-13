@@ -1,0 +1,49 @@
+footer {
+  border-top: solid 2px black;
+}
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+h1 {
+  border-bottom: 10px solid white;
+  border-style: inset;
+  background-image: linear-gradient(red, yellow);
+
+}
+nav ol li {
+  text-decoration: none;
+  list-style-type: none;
+  float: left;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+p {
+  padding: 10px 10px;
+  height: 50px;
+  width: 800px;
+}
+a {
+  padding: 10px 15px;
+}
+nav {
+ padding: 15px 15px;
+}
+img {
+  padding: 20px 20px;
+}
+
+#mailto {
+  padding: 20px 20px;
+}
+body {
+  margin: 0;
+  color: white;
+  background-color: black;
+}
