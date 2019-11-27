@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>HTML_CH07_HW</title>
+  <style media="screen">
+  body{
+    padding: 0px;
+    margin: 0px;
+  }
+  nav {
+    border-bottom: 2px solid black;
+    padding-bottom: 25px;
+  }
+
+  nav ol {
+    margin-right: auto;
+    margin-left: auto;
+    width: 30%;
+  }
+
+  nav ol li {
+    list-style-type: none;
+    float: left;
+    padding-left: 15%;
+
+
+  }
+
+  nav ol li a {
+    text-decoration: none;
+  }
+
+.navbar2 ol{
+  padding-top: 20px;
+  padding-left: 0px;
+}
+
+.navbar2 ol li {
+  list-style-type: none;
+  border: 2px solid black;
+  padding: 20px 20px;
+  width: 10%;
+  text-align: center;
+}
+
+.content{
+display: none;
+position: absolute;
+left: 0;
+background-color: gray;
+width: 100%;
+z-index: 1;
+}
+
+.content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  padding-left: 200px;
+}
+
+.sub-content{
+position: absolute;
+left: 0;
+background-color: gray;
+width: 100%;
+z-index: 1;
+}
+
+.subnav:hover .content {
+  display: block;
+  padding-left: 20px;
+}
+
+.content:hover .sub-content {
+
+}
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ol>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#contact">Contact us</a></li>
+      <li><a href="#store">Store</a></li>
+    </ol>
+  </nav>
+  <nav>
+    <ol class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#contact">Contact us</a></li>
+      <li><a href="#store">Store</a></li>
+    </ol>
+  </nav>
+  <div class="navbar2">
+    <ol>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+    </ol>
+  </div>
+  <div class="twotier">
+    <a href="#HOME">Home</a>
+    <div class="subnav">
+    <button class="2tierbtn">About</button>
+    <div class="content">
+      <a href="#blank">Blank</a>
+      <a href="#blank">awesome</a>
+      <a href="#blank">cool</a>
+    </div>
+  </div>
+  </div>
+</body>
+</html>

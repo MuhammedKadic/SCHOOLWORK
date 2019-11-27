@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>JS HOT#1</title>
+  <script type="text/javascript">
+    let favoriteMovies = new Array();
+    favoriteMovies = ["Fast And Furious", "First Day Of School", "Muhammed Kadic Is A Boss"];
+
+    function updateArray() {
+
+      let user_input = document.getElementById('user_input').value;
+
+      favoriteMovies.push(user_input);
+      console.log(favoriteMovies);
+      document.getElementById('result').innerHTML = "";
+      for (i = 0; i < favoriteMovies.length; i++) {
+        document.getElementById('result').innerHTML += "" + favoriteMovies[i] + "<br>";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <form>
+    <label>Please Enter Your Favorite Move Here</label> <input type="text" name="" value="" id="user_input">
+  </form>
+  <input type="submit" name="" value="Submit" onclick="updateArray()">
+  <p id="result"></p>
+</body>
+
+</html>

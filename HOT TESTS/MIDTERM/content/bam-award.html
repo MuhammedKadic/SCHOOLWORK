@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>BAM AWARD</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Bootstrap Dropdown Hover CSS -->
+  <link href="../css/animate.min.css" rel="stylesheet">
+  <link href="../css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    body {
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  </style>
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+  </style>
+  <script type="text/javascript">
+    function toggleDropdown(e) {
+      const _d = $(e.target).closest('.dropdown'),
+        _m = $('.dropdown-menu', _d);
+      setTimeout(function() {
+        const shouldOpen = e.type !== 'click' && _d.is(':hover');
+        _m.toggleClass('show', shouldOpen);
+        _d.toggleClass('show', shouldOpen);
+        $('[data-toggle="dropdown"]', _d).attr('aria-expanded', shouldOpen);
+      }, e.type === 'mouseleave' ? 300 : 0);
+    }
+
+    $('body')
+      .on('mouseenter mouseleave', '.dropdown', toggleDropdown)
+      .on('click', '.dropdown-menu a', toggleDropdown);
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-flex-box">
+      <img src="../img/brc-logo.png" alt="">
+      <div class="nav-flex-child">
+        <h1>Belleville Running Club</h1>
+        <p>Located in <a href="https://goo.gl/maps/af2ELo83fruNWz4D9" target="_blank">Belleville, IL</a></p>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <a class="nav-link" href="../index.html" style="color: black">Home</a>
+          <a class="nav-link" href="group-runs.html" style="color: black">Group Runs</a>
+          <a class="nav-link" href="running-in-belleville.html" style="color: black">Run BLV</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Events</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="calendar.html">Calendar</a>
+              <a class="dropdown-item" href="river-to-river-relay.html">River To River Relay</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Training</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="training-beginner.html">Couch To 5K Training</a>
+              <a class="dropdown-item" href="half-full-marathon-training-program.html">Marathon Training Program</a>
+            </div>
+          </li>
+          <a class="nav-link" href="about-brc.html" style="color: black">About BRC</a>
+          <a class="nav-link" href="blog.html" style="color: black">Blog</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Membership</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="join-now.html">Join Now</a>
+              <a class="dropdown-item" href="members.html">Members</a>
+              <a class="dropdown-item" href="bam-award.html">Belleville Running Club Awesome Member (BAM) Award</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="container">
+    <article id="content">
+      <div id="post-613" class="post-613 page type-page status-publish hentry">
+        <h1 class="entry-title">Belleville Running Club Awesome Member (BAM) Award</h1>
+        <div class="entry-content">
+          <p style="text-align: left;"><span style="font-weight: 400; color: #000000;">The goal of the BRC Awesome Member (BAM) Award is to encourage all members to:</span></p>
+          <ol>
+            <li style="font-weight: 400;"><span style="font-weight: 400; color: #000000;">Attend group runs</span></li>
+            <li style="font-weight: 400;"><span style="font-weight: 400; color: #000000;">Volunteer at BRC events</span></li>
+            <li style="font-weight: 400;"><span style="font-weight: 400; color: #000000;">Attend BRC meetings (yes, we have to bribe you to attend our meetings)</span></li>
+            <li style="font-weight: 400;"><span style="font-weight: 400; color: #000000;">Show your BRC colors at other events, namely races</span></li>
+          </ol>
+          <p><span style="font-weight: 400; color: #000000;">BRC Awesome Member Award points and awards are based on participation in, not results of, these activities. Every January, during our Annual Awards Banquet, the top 10 BAM point-getters
+              will be recognized for their accomplishments and BAM prizes will be awarded. </span></p>
+          <h3><strong><span style="color: #ff0000;">Most Awesome Rewards</span></strong></h3>
+          <ul>
+            <li><span style="color: #000000;"><strong>1st place –</strong> $125 Gift Card to <a href="http://www.runningstartsports.com/">Toolen’s Running Start</a></span></li>
+            <li><span style="color: #000000;"><strong>2nd place –</strong> $50 Race Reimbursement</span></li>
+            <li><span style="color: #000000;"><strong>3rd place –</strong> $25 Race Reimbursement</span></li>
+          </ul>
+          <p><span style="color: #000000;"><span style="font-weight: 400;">*The next 7 point-getters will receive a</span> BRC Shirt.<span style="font-weight: 400;"> Also not too shabby.</span></span></p>
+          <h3><strong><span style="color: #ff0000;">Details/Rules of Competition</span></strong></h3>
+          <ul>
+            <li style="list-style-type: none;">
+              <ul>
+                <li style="font-weight: 400;"><span style="font-weight: 400; color: #000000;">You must be a registered member of the BRC. If you are not an “official” member, you can register at&nbsp;<a style="color: #000000;"
+                      href="https://secure.getmeregistered.com/get_information.php?event_id=126263">https://secure.getmeregistered.com/get_information.php?event_id=126263</a></span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400; color: #000000;">Members must race/volunteer in visible BRC gear. It can be a T-shirt, singlet, hoodie, etc. Visit our online store to
+                    purchase one!</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400; color: #000000;">Members earn 1 point for every full mile raced in any official race. For example, a 5K (3.1 miles) will count as 3 points.</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400; color: #000000;">Members earn the same number of points if they VOLUNTEER at one of these events. We understand that you may be required to wear a volunteer shirt if you are
+                    volunteering at a race. If so, try to wear a BRC hat/visor or something. Or just wear your BRC shirt under the volunteer shirt.</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400; color: #000000;">Members earn 15 points for volunteering at either of the annual Trashy Runs.</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400; color: #000000;">Members earn 5 points for attending a BRC meeting.</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400; color: #000000;">Members earn 2 points/hour for volunteering at the Chili Cookoff.</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400; color: #000000;">Members earn 1 extra point for posting a photo of yourself (in a BRC shirt) accomplishing one of the tasks above on our facebook group.</span></li>
+                <li style="font-weight: 400;"><span style="color: #000000;"><b><span style="font-weight: 400;">Members earn 1 point per group run. To earn these points, the member must be tagged in the picture that’s posted to the BRC Public Group
+                        with the #BRCGroupRun17 hash tag.</span></b></span></li>
+                <li style="font-weight: 400;"><span style="color: #000000;">Members must submit their race results within 2 WEEKS of completing an event. Results must be submitted by completing the form below. Any running or walking race of any
+                    distance will be eligible. Only the running portion of a multisport event will count toward point totals. Unofficial fun runs are excluded.</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400; color: #000000;">Permanent tattoo of the BRC logo earns you a lifetime BAM Award (and probably a lifetime of regrets).</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400; color: #000000;">Points will generally be accumulated only during a calendar year (January 1 through December 31).</span></li>
+              </ul>
+            </li>
+          </ul>
+          <h3><span style="color: #ff0000;">Weekly BRC Group Run BAM Points</span></h3>
+          <p>Can be claimed by updating <a href="https://docs.google.com/spreadsheets/d/1rpwZJLSh9t0qRIZqU0yMQopcza36tjRMhBtq6FLPl04/edit#gid=885382129" target="_blank">this spreadsheet.</a> You are responsible for updating your weekly Group Run BAM
+            points.</p>
+          <p><span style="color: #000000;">This year’s program began on January 1, 2019. Point totals will be updated once a month, maybe more often.</span></p>
+          <p><span style="text-decoration: underline; color: #000000;"><strong>Current Leaders</strong></span><br>
+            <iframe src="https://docs.google.com/spreadsheets/d/1_agahYR12Zg8o9rOiya3jEOFtdjts8OYdU_pxIOr3M8/pubhtml?gid=656414638&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;range=a1:d63" width="100%" height="300"><span
+                data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span><span data-mce-type="bookmark"
+                style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></p>
+          <h2><span style="color: #000000;">The&nbsp;Point Request Form</span></h2>
+          <p><iframe src="https://docs.google.com/forms/d/1F3bB8u1Rj1YA7KoCWyRl7y4jzUk7MFuB7nXfePX7XsU/viewform?embedded=true" width="700" height="700" frameborder="0" marginwidth="0" marginheight="0">Loading&#8230;</iframe></p>
+          <h2><span style="color: #000000;">Previous Winners</span></h2>
+          <p><span style="color: #000000;">The 2015 (05/01/15 – 12/31/15), 2016, and 2017 totals:</span></p>
+          <p><iframe src="https://docs.google.com/spreadsheets/d/1fAF3y8XYD_f4YfEreDIwapipKxNHrjwkHHV3P2hQxMQ/pubhtml?gid=656414638&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;range=a1:n73" width="800" height="600"><span
+                data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span><span data-mce-type="bookmark"
+                style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></p>
+        </div>
+      </div>
+    </article>
+    <div class="clear"></div>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>

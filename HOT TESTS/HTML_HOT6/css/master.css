@@ -1,0 +1,152 @@
+* {
+  @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+
+nav ul li {
+  display: flex;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: orange;
+}
+
+@media only screen and (min-width: 800px) {
+  header {
+    background: linear-gradient(to right, #403b4a, #e7e9bb);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: orange;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  * {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+  }
+
+  nav ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 40px;
+  }
+
+  nav ul li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    color: orange;
+  }
+
+  .box {
+    display: flex;
+    width: 50%;
+    border: 2px solid black;
+    float: left;
+    height: 500px;
+  }
+
+
+  #container_school {
+    background-color: white;
+  }
+
+  td {
+    padding: 20px 20px;
+  }
+
+  #box_alone {
+    display: flex;
+    border: 2px solid black;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .box2 ol li {
+    padding: 40px 40px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .box ul li {
+    padding: 40px 40px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .box p {
+    font-size: 25px;
+  }
+
+  .box h1 {
+    border-bottom: 2px solid black;
+    text-align: center;
+  }
+
+  .box2 h1 {
+    border-bottom: 2px solid black;
+    text-align: center;
+  }
+
+  .box2 {
+    display: flex;
+    width: 50%;
+    float: left;
+    border: 2px solid black;
+    height: 500px;
+  }
+
+  main {
+    display: flex;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    clear: left;
+    padding-top: 40px;
+  }
+  aside a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Group Runs</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    body {
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  </style>
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+  </style>
+  <script type="text/javascript">
+    function toggleDropdown(e) {
+      const _d = $(e.target).closest('.dropdown'),
+        _m = $('.dropdown-menu', _d);
+      setTimeout(function() {
+        const shouldOpen = e.type !== 'click' && _d.is(':hover');
+        _m.toggleClass('show', shouldOpen);
+        _d.toggleClass('show', shouldOpen);
+        $('[data-toggle="dropdown"]', _d).attr('aria-expanded', shouldOpen);
+      }, e.type === 'mouseleave' ? 300 : 0);
+    }
+
+    $('body')
+      .on('mouseenter mouseleave', '.dropdown', toggleDropdown)
+      .on('click', '.dropdown-menu a', toggleDropdown);
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-flex-box">
+      <img src="../img/brc-logo.png" alt="">
+      <div class="nav-flex-child">
+        <h1>Belleville Running Club</h1>
+        <p>Located in <a href="https://goo.gl/maps/af2ELo83fruNWz4D9" target="_blank">Belleville, IL</a></p>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <a class="nav-link" href="../index.html" style="color: black">Home</a>
+          <a class="nav-link" href="group-runs.html" style="color: black">Group Runs</a>
+          <a class="nav-link" href="running-in-belleville.html" style="color: black">Run BLV</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Events</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="calendar.html">Calendar</a>
+              <a class="dropdown-item" href="river-to-river-relay.html">River To River Relay</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Training</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="training-beginner.html">Couch To 5K Training</a>
+              <a class="dropdown-item" href="half-full-marathon-training-program.html">Marathon Training Program</a>
+            </div>
+          </li>
+          <a class="nav-link" href="about-brc.html" style="color: black">About BRC</a>
+          <a class="nav-link" href="blog.html" style="color: black">Blog</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Membership</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="join-now.html">Join Now</a>
+              <a class="dropdown-item" href="members.html">Members</a>
+              <a class="dropdown-item" href="bam-award.html">Belleville Running Club Awesome Member (BAM) Award</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <style media="screen">
+    .flex-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .flex-box-inside h2 {
+      font-size: 18px;
+      padding-top: 25px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .flex-box h1 {
+      text-align: center;
+    }
+
+    .flex-box-inside ul li {
+      text-align: center;
+      text-decoration: none;
+      list-style-type: none;
+    }
+  </style>
+  <main>
+    <div class="flex-box">
+      <h1>Group Runs</h1>
+      <div class="flex-box-inside">
+        <h2>Our weekly group runs occur on</h2>
+        <ul>
+          <li>Tuesdays, 6pm, Hills at the Shrine</li>
+          <li>Thursdays, 6pm, downtown Belleville</li>
+          <li>Saturdays, 8am, downtown Belleville</li>
+        </ul>
+      </div>
+      <div class="tuesdays">
+        <h1 style="color:blue;">Tuesdays (Hills at the Shrine)</h1>
+        <p>Currently, we meet at the <a href="http://www.snows.org/">Shrine of Our Lady of the Snows</a> on Tuesday nights at
+          6:00pm for hill workouts.
+          We meet in the parking lot by the restaurant. Please make certain that you are on our <a href="https://groups.yahoo.com/neo/groups/BellevilleRunningClub/info?showJoinPopup=true">
+            Yahoo Group</a> and/or <a href="https://www.facebook.com/group.php?gid=4825939930">Facebook Group</a> so that you
+          receive information on any changes to the time or location. This will continue until daylight savings time ends in the fall.</p>
+        <p>In the fall (after Daylight Savings Time ends), we will meet at <a href="https://www.swic.edu/">Southwestern Illinois College (SWIC)</a> on Tuesday evenings at 6:00pm for a run along a well lit trail.
+          We meet in the parking lot just north of the Metrolink stop. The trail is about 1.4 miles around, it’s well lit, there are good bathrooms, and there is water.
+          Please make certain that you are on our <a href="https://www.facebook.com/group.php?gid=4825939930">Facebook Group</a> and
+          <a href="https://groups.yahoo.com/neo/groups/BellevilleRunningClub/info?showJoinPopup=true">
+            Yahoo Group</a>
+          so that you receive information on any changes to the time or location. This will continue until daylight savings time begins in the spring.</p>
+        <p><a href="http://www.runningstartsports.com/index.htm">Toolen’s Running Start</a> also hosts a Tuesday night speedwork at 5:30pm from their store in Shiloh. Call the store at (618) 628-9898 for more information.</p>
+      </div>
+      <div class="thursdays">
+        <h1 style="color: blue; padding-top: 26px;">Thursdays (Social Night)</h1>
+        <p>We meet on Thursday evenings at 6:00 pm in the parking lot at the northwest corner of “A” and “North Jackson” streets, adjacent to Casa Maria Mexican Grill (100 N. High St).</p>
+        <p>We run a course that consists of a
+          <a href="http://www.mapmyrun.com/routes/view/10951380">3 mile loop</a>
+          as shown below,
+          although many people run the
+          <a href="https://www.mapmyrun.com/routes/view/3566561">5 mile loop</a>
+          shown below with the Saturday run.
+          <span style="color: red;"> Please see the temporary route during construction on the trail</span> –
+          3 Mile Route – <a href="https://www.plotaroute.com/route/393204">
+            www.plotaroute.com/route/393204</a></p>
+        <p><iframe src="http://snippets.mapmycdn.com/routes/view/embedded/10951380?width=600&height=400&&line_color=E60f0bdb&rgbhex=DB0B0E&distance_markers=0&unit_type=imperial&map_mode=ROADMAP&last_updated=2009-09-22T08:54:50-05:00" width="100%"
+            height="400px"></iframe></p>
+      </div>
+      <div class="saturdays">
+        <h1 style="color: blue;">Saturdays (the long run)</h1>
+        <p>We meet on Saturday mornings at 8:00 am in the parking lot behind <a href="https://margaritasbelleville.com/">Margaritas Mexican Restaurant</a> in downtown Belleville.</p>
+        <p>We run a course that consists of a <a href="https://www.mapmyrun.com/routes/view/3566561">5 mile loop</a>. However, this distance and start times can vary during the marathon training sessions.
+          <span style="color: red;">lease see the temporary route during construction on the trail</span> – 5 Mile Route – <a href="www.plotaroute.com/route/393205">www.plotaroute.com/route/393205</a></p>
+        <iframe id="mapmyfitness_route"
+          src="http://snippets.mapmycdn.com/routes/view/embedded/3566561?width=600&amp;height=400&amp;&amp;line_color=E60f0bdb&amp;rgbhex=DB0B0E&amp;distance_markers=0&amp;unit_type=imperial&amp;map_mode=ROADMAP&amp;last_updated=2008-08-12T13:15:46-05:00"
+          width="100%" height="400px" frameborder="0"></iframe>
+        <p>Many of our members who are training for a half marathon or marathon often run multiple laps on Saturday mornings. This is when they get in their “long run” for the week.</p>
+      </div>
+    </div>
+  </main>
+  <footer class="blog-footer">
+    <p>&copy; 2019 Belleville Running Club. All Rights Reserved. Proudly Built by Muhammed Kadic</p>
+  </footer>
+
+  <footer class="blog-footer-mobile">
+    <ul>
+      <h1>Recent Posts</h1>
+      <li></li>
+    </ul>
+    <p>&copy; 2019 Belleville Running Club. All Rights Reserved. Proudly Built by Muhammed Kadic</p>
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>

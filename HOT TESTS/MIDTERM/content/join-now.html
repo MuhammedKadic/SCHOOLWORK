@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Join NOW</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    body {
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  </style>
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+  </style>
+  <script type="text/javascript">
+    function toggleDropdown(e) {
+      const _d = $(e.target).closest('.dropdown'),
+        _m = $('.dropdown-menu', _d);
+      setTimeout(function() {
+        const shouldOpen = e.type !== 'click' && _d.is(':hover');
+        _m.toggleClass('show', shouldOpen);
+        _d.toggleClass('show', shouldOpen);
+        $('[data-toggle="dropdown"]', _d).attr('aria-expanded', shouldOpen);
+      }, e.type === 'mouseleave' ? 300 : 0);
+    }
+
+    $('body')
+      .on('mouseenter mouseleave', '.dropdown', toggleDropdown)
+      .on('click', '.dropdown-menu a', toggleDropdown);
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-flex-box">
+      <img src="../img/brc-logo.png" alt="">
+      <div class="nav-flex-child">
+        <h1>Belleville Running Club</h1>
+        <p>Located in <a href="https://goo.gl/maps/af2ELo83fruNWz4D9" target="_blank">Belleville, IL</a></p>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <a class="nav-link" href="../index.html" style="color: black">Home</a>
+          <a class="nav-link" href="group-runs.html" style="color: black">Group Runs</a>
+          <a class="nav-link" href="running-in-belleville.html" style="color: black">Run BLV</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Events</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="calendar.html">Calendar</a>
+              <a class="dropdown-item" href="river-to-river-relay.html">River To River Relay</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Training</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="training-beginner.html">Couch To 5K Training</a>
+              <a class="dropdown-item" href="half-full-marathon-training-program.html">Marathon Training Program</a>
+            </div>
+          </li>
+          <a class="nav-link" href="about-brc.html" style="color: black">About BRC</a>
+          <a class="nav-link" href="blog.html" style="color: black">Blog</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Membership</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="join-now.html">Join Now</a>
+              <a class="dropdown-item" href="members.html">Members</a>
+              <a class="dropdown-item" href="bam-award.html">Belleville Running Club Awesome Member (BAM) Award</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+  <div id="container">
+    <article id="content">
+      <div id="post-623" class="post-623 page type-page status-publish hentry">
+        <h1 class="entry-title">Join Now</h1>
+        <div class="entry-content">
+          <p>BRC membership registration for 2019 is open for new memberships and renewal. You may take care of this online at&nbsp;<a href="https://secure.getmeregistered.com/get_information.php?event_id=126263">getmeregistered.com</a>&nbsp;or
+            submit a <a href="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2019/01/2019_BRC_Membership_Application.pdf">paper 2019 BRC Membership Application</a>. Not sure if your membership is currently valid? <a
+              href="members.html">Check the Members Page</a>.</p>
+          <p><a href="https://secure.getmeregistered.com/get_information.php?event_id=126263"><img class="alignnone" src="https://secure.getmeregistered.com/images/gmr_register_online.png" alt="click here to register online at Get Me Registered"
+                width="200" height="111"></a></p>
+          <p><strong><span style="text-decoration: underline;">MEMBERSHIP LEVELS</span></strong></p>
+          <ul>
+            <li>Individual 1-year membership: $12/year</li>
+            <li>Individual 1-year student membership: $10/year</li>
+            <li>Individual 5-year membership: $45 (this is a 25% discount off the 1-year membership)</li>
+            <li>Family 1-year membership: $20/year</li>
+            <li>Family 5-year membership: $75 (this is a 25% discount off the family 1-year membership)</li>
+          </ul>
+          <p><span style="text-decoration: underline;"><strong>MEMBERSHIP BENEFITS (2019)</strong></span></p>
+          <ul>
+            <li>Race DISCOUNTS (in past years, registered members were offered more than $100 in race fee discounts). Discount codes are sent to only registered members.</li>
+            <li>10% off all BRC gear/merchandise (an online code for the discount will be sent to registered members).</li>
+            <li>10% off purchases from Toolen’s Running Start in Shiloh (must mention in store you are a BRC member) and 10% off purchases from the Running Warehouse (an online discount code will be sent to registered members).</li>
+            <li>Eligibility to compete in the annual BAM (BRC Awesome Member) contest (http://bellevillerunningclub.com/membership/bam-award/).</li>
+            <li>Voting privileges on the BRC budget and bylaws.</li>
+            <li>Membership in the Road Runner Clubs of America (RRCA—governing body over BRC) and a complimentary online subscription of its <em>Club Running </em></li>
+            <li>Eligibility to be on the BRC Board of Directors or a committee chairperson.</li>
+            <li>Opportunity to participant in the BRC booth at the annual downtown Belleville Chili Cookoff (per RRCA guidelines, only “registered” members can participant in events in which the transfer/handling of money takes place).</li>
+            <li>Support running/walking in Belleville. Because of our affiliation with the RRCA and efforts of club members, Belleville was designated a Runner Friendly Community. In addition, the BRC is partnering with the Belleville Parks and
+              Recreation Department through an annual donation for improvements along the MetroLink trail in Belleville. In 2017, the BRC donated trees and trash cans along the MetroLink trail.</li>
+            <li>You become a “card-carrying member” of one of the coolest groups around!</li>
+          </ul>
+          <p>For more information or questions, please contact brc@bellevillerunningclub.com.</p>
+          <form id="gmrconf" action="https://secure.getmeregistered.com/confirm.php" method="post"></form>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>

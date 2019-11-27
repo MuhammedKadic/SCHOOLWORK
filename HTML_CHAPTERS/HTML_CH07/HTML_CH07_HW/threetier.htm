@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Three Tier</title>
+  <style media="screen">
+  nav ul {
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    border: 2px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  nav>ul>li {
+    float: left;
+     position: relative;
+   }
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%; left: 0;
+  }
+  nav ul ul ul {
+    top: 0;
+     left: 100%;
+   }
+  nav li:hover>ul {
+    display: block;
+  }
+
+</style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href='#'>Products</a>
+        <ul>
+          <li>
+            <a href='#'>TV</a>
+            <ul>
+              <li><a href='#'>SmartTV</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href='#'>IPhones</a>
+            <ul>
+              <li><a href='#'>IPhone Xs MAX</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>

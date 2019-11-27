@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HOT #3</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin 0px;
+    }
+
+    h2 {
+      color: white;
+    }
+
+    body {
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .TOP-HEADER {
+      border: 2px solid black;
+      text-align: center;
+      background-color: red;
+    }
+
+    #indent {
+      padding-left: 20px;
+      font-weight: bold;
+
+    }
+
+    .field_set {
+      margin-top: 10px;
+    }
+
+    #astrix {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="TOP-HEADER">
+      <h1>G-CRYPTO</h1>
+      <h2>A Crypto consultant that YOU CAN TRUST</h2>
+    </div>
+  </header>
+  <div class="text-danger" id="error">
+  </div>
+  <main>
+    <form class="form" action="cryptoSale.php" id="send_form" method="POST">
+      <fieldset class="form-group">
+        <legend>What Would you like today?<span id="astrix"> *</span></legend>
+        <input type="radio" id="BITCOIN" class="custom-radio" name="1" value="Bitcoin"><label for="">Bitcoin</label> <input type="radio" id="ethereum" class="custom-radio" name="1" value="Ethereum"><label for="">Ethereum</label><br>
+        <div class="text-danager" id="error_radio"></div>
+      </fieldset>
+      <fieldset class="form-group">
+        <legend>Which wallet(s) do you want to use?<span id="astrix"> *</span></legend>
+        <input type="checkbox" id="wallet_option_1" class="custom-checkbox" name="2" value="hardware_wallet"><label for="">Hardware Wallet</label> <input type="checkbox" class="custom-checkbox" name="2" id="wallet_option_2" value="Web Wallet"><label
+          for="">Web Wallet</label><br>
+        <div class="text-danager" id="error_checkbox"></div>
+      </fieldset>
+      <fieldset class="form-group">
+        <legend style="font-weight: bolder; font-size: 25px;">Customer Information</legend>
+        <label style="font-weight: bold;">First Name<span id="astrix"> *</span></label><br>
+        <input type="text" id="first_name" class="form-control" name="customer_information" value="" style="width: 600px;">
+        <br><label style="font-weight: bold;">Last Name<span id="astrix"> *</span></label><br>
+        <input type="text" id="last_name" class="form-control" name="customer_information" value="" style="width: 600px;">
+        <br><label style="font-weight: bold;">Street Address<span id="astrix"> *</span></label><br>
+        <input type="text" id="address" class="form-control" name="customer_information" value="" style="width: 600px;">
+        <br><label style="font-weight: bold;">Zip Code<span id="astrix"> *</span></label><br>
+        <input type="text" id="zip_code" class="form-control" name="customer_information" value="" style="width: 600px;">
+        <br><label style="font-weight: bold;">Email<span id="astrix"> *</span></label><br>
+        <input type="text" id="email" class="form-control" name="customer_information" value="" style="width: 600px;">
+        <br><label style="font-weight: bold;">Confirm Email<span id="astrix"> *</span></label><br>
+        <input type="text" id="confirmed_email" class="form-control" name="customer_information" value="" style="width: 600px;">
+        <br><label style="font-weight: bold;">Phone<span id="astrix"> *</span></label><br>
+        <input type="text" id="phone" class="form-control" name="customer_information" value="" style="width: 600px;">
+      </fieldset>
+      <div class="text-danger" id="customer_information"></div>
+      <fieldset class="form-group">
+        <legend style="font-weight: bolder; font-size: 25px;">Billing Information</legend>
+        <input type="checkbox" onclick="sameASABOVE()" id="same_as_above" name="same_as_above" value=""><label>Same as above</label><br>
+        <label style="font-weight: bold;">First Name<span id="astrix"> *</span></label><br>
+        <input type="text" id="billing_name" class="form-control" name="customer_information" value="" style="width: 600px;" required>
+        <br><label style="font-weight: bold;">Last Name<span id="astrix"> *</span></label><br>
+        <input type="text" id="billing_last" class="form-control" name="customer_information" value="" style="width: 600px;" required>
+        <br><label style="font-weight: bold;">Street Address<span id="astrix"> *</span></label><br>
+        <input type="text" id="billing_address" class="form-control" name="customer_information" value="" style="width: 600px;" required>
+        <br><label style="font-weight: bold;">Zip Code<span id="astrix"> *</span></label><br>
+        <input type="text" id="billing_zip" class="form-control" name="customer_information" value="" style="width: 600px;" required>
+        <br><label style="font-weight: bold;">Phone<span id="astrix"> *</span></label><br>
+        <input type="text" id="billing_phone" class="form-control" name="customer_information" value="" style="width: 600px;" required>
+      </fieldset>
+      <div class="text-danger" id="billing_information">
+      </div>
+      <br>
+      <input type="button" id="submit" value="Submit">
+    </form>
+  </main>
+  <script src="validation.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

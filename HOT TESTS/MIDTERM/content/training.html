@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Training</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    body {
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  </style>
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+  </style>
+  <script type="text/javascript">
+    function toggleDropdown(e) {
+      const _d = $(e.target).closest('.dropdown'),
+        _m = $('.dropdown-menu', _d);
+      setTimeout(function() {
+        const shouldOpen = e.type !== 'click' && _d.is(':hover');
+        _m.toggleClass('show', shouldOpen);
+        _d.toggleClass('show', shouldOpen);
+        $('[data-toggle="dropdown"]', _d).attr('aria-expanded', shouldOpen);
+      }, e.type === 'mouseleave' ? 300 : 0);
+    }
+
+    $('body')
+      .on('mouseenter mouseleave', '.dropdown', toggleDropdown)
+      .on('click', '.dropdown-menu a', toggleDropdown);
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-flex-box">
+      <img src="../img/brc-logo.png" alt="">
+      <div class="nav-flex-child">
+        <h1>Belleville Running Club</h1>
+        <p>Located in <a href="https://goo.gl/maps/af2ELo83fruNWz4D9" target="_blank">Belleville, IL</a></p>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <a class="nav-link" href="../index.html" style="color: black">Home</a>
+          <a class="nav-link" href="group-runs.html" style="color: black">Group Runs</a>
+          <a class="nav-link" href="running-in-belleville.html" style="color: black">Run BLV</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Events</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="calendar.html">Calendar</a>
+              <a class="dropdown-item" href="river-to-river-relay.html">River To River Relay</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Training</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="training-beginner.html">Couch To 5K Training</a>
+              <a class="dropdown-item" href="half-full-marathon-training-program.html">Marathon Training Program</a>
+            </div>
+          </li>
+          <a class="nav-link" href="about-brc.html" style="color: black">About BRC</a>
+          <a class="nav-link" href="blog.html" style="color: black">Blog</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Membership</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="join-now.html">Join Now</a>
+              <a class="dropdown-item" href="members.html">Members</a>
+              <a class="dropdown-item" href="bam-award.html">Belleville Running Club Awesome Member (BAM) Award</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>

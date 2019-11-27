@@ -1,0 +1,41 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+header {
+  background-color: #8CB4F3;
+  width: 100%;
+  padding: 20px 20px;
+  text-align: center;
+  font-size: 30px;
+}
+.little_column {
+
+  background-color: purple;
+  width: 30%;
+  float: left;
+  padding: 50% 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.big_column {
+  background-color: orange;
+  width: 100%;
+  padding: 50% 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+footer {
+  width: 100%;
+  background-color: #A49BE8;
+  padding: 2% 20px;
+  text-align: center;
+  font-size: 30px;
+}

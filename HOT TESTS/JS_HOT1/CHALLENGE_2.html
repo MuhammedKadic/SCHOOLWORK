@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript">
+    function checkAge() {
+      let user_input = parseInt(document.getElementById('user_input').value);
+
+      if (user_input >= 200 || user_input <= 0) {
+        alert("Age is out of range please try again");
+        return;
+      } else if (user_input >= 21) {
+        alert('Welcome to the Venue!');
+        return;
+      } else if (user_input <= 20) {
+        alert('Youre Not old enough!');
+        return;
+      } else if (isNaN(user_input)) {
+        alert('You cannot type in any letters. Please enter your age.');
+        return;
+      } else {
+        alert('the program just broke idk what happened.');
+        return;
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <form>
+    <label>Enter Your Age Here</label><input id="user_input" type="text" name="" value="">
+  </form>
+  <input type="submit" name="" value="Submit" onclick="checkAge()">
+</body>
+
+</html>

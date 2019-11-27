@@ -1,0 +1,247 @@
+/*
+Theme Name: Belville Running Club Theme
+Theme URI: indite.pw
+Author: Muhammed Kadic
+Author URI: https://www.indite.pw
+Description: A basic theme using the Bootstrap framework.
+Version: 1.0
+Text Domain: indite.pw
+*/
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  -webkit-animation: fadein .8s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein .8s;
+  /* Firefox < 16 */
+  -ms-animation: fadein .8s;
+  /* Internet Explorer */
+  -o-animation: fadein .8s;
+  /* Opera < 12.1 */
+  animation: fadein .8s;
+}
+
+/* FADE IN FRAMES
+ */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*  */
+.nav-flex-box {
+  display: flex;
+  padding: 10px 10px;
+  justify-content: center;
+}
+.blog-nav {
+  justify-content: center;
+  align-items: center;
+
+  align-self: center;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0px;
+}
+
+.nav-flex-child {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.carousel {
+  width: 100%;
+  padding: 0px;
+  padding-top: 0px;
+  height: 400px;
+}
+
+.navbar-nav a {
+  color: black;
+}
+
+.blog-nav {
+  padding: margin: 20px 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.blog-nav-item {
+  padding: 5px 5px;
+}
+
+.blog-footer {
+  text-align: center;
+}
+
+/* INDEX PAGE CODE */
+#header_index {
+  text-align: center;
+}
+
+.date_to_mark {
+  display: flex;
+  width: 100%;
+}
+
+.blog-footer-mobile {
+  display: none;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 75%;
+}
+
+.right {
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+}
+
+.jumbotron {
+  background-image: url("https://i.gyazo.com/1ff83a4f572b597bca6f68c32804ab42.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45%;
+  background-color: rgba(255, 0, 0, 0.1);
+  background-blend-mode: overlay;
+}
+
+.three a {
+  text-decoration: underline;
+  list-style-type: none;
+}
+
+.three a:hover {
+  color: orange;
+}
+
+.three li {
+  list-style-type: none;
+}
+
+.container-row h1 {
+  text-decoration: underline;
+}
+
+.container-row li {
+  list-style-type: none;
+}
+.container-row a {
+  text-decoration: underline;
+}
+.container-row a:hover {
+  color: orange;
+}
+.four a {
+  text-decoration: underline;
+  list-style-type: none;
+}
+#JOIN_NOW {
+  text-align: center;
+}
+
+#under-text {
+  text-align: center;
+}
+
+
+
+#JOIN_NOW a:hover {
+  color: orange;
+}
+.four a:hover {
+  color: orange;
+}
+
+.one ul li a::after, .one ul li a::before{
+  color: white;
+}
+
+@media only screen and (min-width: 830px) {
+  .container-row {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .container-row {
+    display: none;
+  }
+
+  .date_to_mark {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-footer-mobile {
+    display: block;
+    border-top: 2px solid black;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .blog-footer {
+    display: none;
+  }
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Members</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    body {
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  </style>
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+  </style>
+  <script type="text/javascript">
+    function toggleDropdown(e) {
+      const _d = $(e.target).closest('.dropdown'),
+        _m = $('.dropdown-menu', _d);
+      setTimeout(function() {
+        const shouldOpen = e.type !== 'click' && _d.is(':hover');
+        _m.toggleClass('show', shouldOpen);
+        _d.toggleClass('show', shouldOpen);
+        $('[data-toggle="dropdown"]', _d).attr('aria-expanded', shouldOpen);
+      }, e.type === 'mouseleave' ? 300 : 0);
+    }
+
+    $('body')
+      .on('mouseenter mouseleave', '.dropdown', toggleDropdown)
+      .on('click', '.dropdown-menu a', toggleDropdown);
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-flex-box">
+      <img src="http://bellevillerunningclub.com/wp-uploads/2013/03/BRC-LOGO-circle-small.png" alt="">
+      <div class="nav-flex-child">
+        <h1>Belleville Running Club</h1>
+        <p>Located in <a href="https://goo.gl/maps/af2ELo83fruNWz4D9" target="_blank">Belleville, IL</a></p>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <a class="nav-link" href="../index.html" style="color: black">Home</a>
+          <a class="nav-link" href="group-runs.html" style="color: black">Group Runs</a>
+          <a class="nav-link" href="running-in-belleville.html" style="color: black">Run BLV</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Events</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="calendar.html">Calendar</a>
+              <a class="dropdown-item" href="river-to-river-relay.html">River To River Relay</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Training</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="training-beginner.html">Couch To 5K Training</a>
+              <a class="dropdown-item" href="half-full-marathon-training-program.html">Marathon Training Program</a>
+            </div>
+          </li>
+          <a class="nav-link" href="about-brc.html" style="color: black">About BRC</a>
+          <a class="nav-link" href="blog.html" style="color: black">Blog</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Membership</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="join-now.html">Join Now</a>
+              <a class="dropdown-item" href="members.html">Members</a>
+              <a class="dropdown-item" href="bam-award.html">Belleville Running Club Awesome Member (BAM) Award</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="container">
+    <article id="content">
+      <div id="post-374" class="post-374 page type-page status-publish hentry">
+        <h1 class="entry-title">Members</h1>
+        <div class="entry-content">
+          <p>The Belleville Running Club greatly appreciates all of our current and past members, committees, and Board of Directors. Please contact the committee chair below if you are interested in helping out with any of the committees.</p>
+          <p>Current membership list (as of 2/21/19): <a href="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2019/02/BRC-Membership-20190221.pdf">BRC Membership-20190221</a></p>
+          <h2>2019 Board of Directors</h2>
+          <div style="float: left; width: 50%;">
+            <style media="screen">
+              ul li img {
+                max-width: 150px;
+                width: 100vw;
+                height: 150px;
+              }
+              ul li {
+                list-style-type: none;
+              }
+            </style>
+            <ul>
+              <li><img src="../img/members/DanTrapp.png" alt="" sizes="(max-width: 150px) 100vw, 150px">Dan Trapp — Pres­i­dent</li>
+              <li><img src="../img/members/JennyGudmestad.PNG" alt="">Jenny Gudmestad — Vice Pres­i­dent</li>
+              <li><img src="../img/members/MonicaTaylor.PNG" alt="">Monica Taylor — Sec­re­tary</li>
+              <li><img src="../img/members/TobyTrapp.PNG" alt="">Toby Trapp — Treasurer</li>
+              <li><img src="../img/members/KristiPashia.PNG" alt="">Kristi Pashia – Group Run Com­mit­tee Chair</li>
+            </ul>
+          </div>
+          <div style="float: left; width: 50%;">
+            <ul>
+              <li><img src="../img/members/SarahWest.PNG" alt="">Sarah West&nbsp;– Mem­ber­ship Com­mit­tee Chair</li>
+              <li><img src="../img/members/CostelAndLisaZamfir.PNG" alt="">Costel and Lisa Zamfir – PR Com­mittee Chair Co-Chairs</li>
+              <li><img src="../img/members/PennyHorcher.PNG" alt="">Chalice Sandheinrich and Penny Horcher – Special Events</li>
+              <li><img src="../img/members/EvanGudmestad.PNG" alt="">Evan Gudmestad – Training Run Com­mit­tee Chair</li>
+            </ul>
+          </div>
+          <br><br><br><br>
+          <br><br><br>
+          <h2 style="clear:both;">2018 Board of Directors</h2>
+          <div style="float: left; width: 50%;">
+            <ul>
+              <li>Dan Trapp — Pres­i­dent</li>
+              <li>Jenny Hawley — Vice Pres­i­dent</li>
+              <li>Monica Taylor — Sec­re­tary</li>
+              <li>Toby Trapp — Treasurer</li>
+              <li>Kristi Pashia – Group Run Com­mit­tee Chair</li>
+            </ul>
+          </div>
+          <div style="float: left; width: 50%;">
+            <ul>
+              <li>Sarah West&nbsp;– Mem­ber­ship Com­mit­tee Chair</li>
+              <li>Costel and Lisa Zamfir – PR Com­mittee Chair Co-Chairs</li>
+              <li>Chalice Sandheinrich and Penny Horcher – Special Events Committee Co-Chairs</li>
+              <li>Evan Gudmestad – Training Run Com­mit­tee Chair</li>
+            </ul>
+          </div>
+          <h2></h2>
+          <h2></h2>
+          <h2 style="clear:both;">2017 Board of Directors</h2>
+          <div style="float: left; width: 50%;">
+            <ul>
+              <li>Dan Trapp — Pres­i­dent</li>
+              <li>JT Turner&nbsp;— Vice Pres­i­dent</li>
+              <li>Erin Strausbaugh — Sec­re­tary</li>
+              <li>Toby Trapp — Treasurer</li>
+              <li>Kristi Pashia – Group Run Com­mit­tee Chair</li>
+            </ul>
+          </div>
+          <div style="float: left; width: 50%;">
+            <ul>
+              <li>Sarah West&nbsp;– Mem­ber­ship Com­mit­tee Chair</li>
+              <li>Tori Coleman and Erika Hart&nbsp;– PR Com­mittee Chair Co-Chairs</li>
+              <li>Costel and Lisa Zamfir – Special Events Committee Co-Chairs</li>
+              <li>Evan Gudmestad – Training Run Com­mit­tee Chair</li>
+            </ul>
+          </div>
+          <h2></h2>
+          <h2 style="clear:both;">&nbsp;2016 Board of Directors</h2>
+          <div style="float: left; width: 50%;">
+            <ul>
+              <li>Toby Trapp — Pres­i­dent</li>
+              <li>JT Turner&nbsp;— Vice Pres­i­dent</li>
+              <li>Erin Strausbaugh — Sec­re­tary</li>
+              <li>Dan Trapp — Treasurer</li>
+              <li>Kristi Pashia – Group Run Com­mit­tee Chair</li>
+            </ul>
+          </div>
+          <div style="float: left; width: 50%;">
+            <ul>
+              <li>Andria Pow­ell and Kris Kotoucek – Mem­ber­ship Com­mit­tee Chair</li>
+              <li>Sarah West – PR Com­mittee Chair</li>
+              <li>Costel and Lisa Zamfir – Special Events Committee Co-Chairs</li>
+              <li>Evan Gudmestad – Training Run Com­mit­tee Chair</li>
+            </ul>
+          </div>
+          <h2></h2>
+          <h2></h2>
+          <h2></h2>
+          <h2 style="clear:both;">2015 Board of Directors</h2>
+          <div style="float: left; width: 50%;">
+            <ul>
+              <li>Toby Trapp — Pres­i­dent</li>
+              <li>Dan Trapp — Vice Pres­i­dent</li>
+              <li>Erin Strausbaugh — Sec­re­tary</li>
+              <li>Patrick Hasen­stab — Treasurer</li>
+              <li>JT Turner (Group Run Com­mit­tee Chair)</li>
+            </ul>
+          </div>
+          <div style="float: left; width: 50%;">
+            <ul>
+              <li>Andria Pow­ell and Kris Kotoucek (Mem­ber­ship Com­mit­tee Chair)</li>
+              <li>Sarah West (PR Com­mittee Chair)</li>
+              <li>Costel and Lisa Zamfir (Special Events Committee Co-Chairs)</li>
+              <li>Meghan Zahn&nbsp;(Training Run Com­mit­tee Chair)</li>
+            </ul>
+          </div>
+          <h2 style="clear:both;">2013/2014 Board of Directors</h2>
+          <div style="float: left; width: 50%;">
+            <ul>
+              <li><a href="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/397504_3615794690992_162277795_n.jpg" rel="fancybox"><img class="alignnone wp-image-447"
+                    src="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/397504_3615794690992_162277795_n-150x150.jpg" alt="397504_3615794690992_162277795_n" width="82"
+                    srcset="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/397504_3615794690992_162277795_n-150x150.jpg 150w, http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/397504_3615794690992_162277795_n-144x144.jpg 144w"
+                    sizes="(max-width: 150px) 100vw, 150px"></a>&nbsp;&nbsp;Toby Trapp — Pres­i­dent</li>
+              <li><a href="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/14716714450_e4a4ebcc97_o.jpg" rel="fancybox"><img class="alignnone wp-image-438"
+                    src="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/14716714450_e4a4ebcc97_o-150x150.jpg" alt="aho4" width="82"
+                    srcset="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/14716714450_e4a4ebcc97_o-150x150.jpg 150w, http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/14716714450_e4a4ebcc97_o-300x300.jpg 300w, http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/14716714450_e4a4ebcc97_o-144x144.jpg 144w, http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/14716714450_e4a4ebcc97_o.jpg 692w"
+                    sizes="(max-width: 150px) 100vw, 150px"></a>&nbsp; Dan Trapp — Vice Pres­i­dent</li>
+              <li><a href="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/10551000_10152677334019276_3430121791472323569_n1.jpg" rel="fancybox"><img class="alignnone wp-image-446"
+                    src="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/10551000_10152677334019276_3430121791472323569_n1-150x150.jpg" alt="10551000_10152677334019276_3430121791472323569_n" width="82"
+                    srcset="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/10551000_10152677334019276_3430121791472323569_n1-150x150.jpg 150w, http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/10551000_10152677334019276_3430121791472323569_n1-300x300.jpg 300w, http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/10551000_10152677334019276_3430121791472323569_n1-144x144.jpg 144w, http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/10551000_10152677334019276_3430121791472323569_n1.jpg 507w"
+                    sizes="(max-width: 150px) 100vw, 150px"></a>&nbsp;&nbsp;Doug Havlin — Sec­re­tary</li>
+              <li><a href="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/securedownload.jpg" rel="fancybox"><img class="alignnone wp-image-420"
+                    src="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/securedownload-150x150.jpg" alt="Pat" width="82"
+                    srcset="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/securedownload-150x150.jpg 150w, http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/securedownload-144x144.jpg 144w"
+                    sizes="(max-width: 150px) 100vw, 150px"></a>&nbsp; Patrick Hasen­stab — Treasurer</li>
+            </ul>
+          </div>
+          <div style="float: left; width: 50%;">
+            <ul>
+              <li><a href="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/10320266_10202560286825296_2733680271324771351_n.jpg" rel="fancybox"><img class="alignnone wp-image-449"
+                    src="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/10320266_10202560286825296_2733680271324771351_n-150x150.jpg" alt="10320266_10202560286825296_2733680271324771351_n" width="82"
+                    srcset="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/10320266_10202560286825296_2733680271324771351_n-150x150.jpg 150w, http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/10320266_10202560286825296_2733680271324771351_n-144x144.jpg 144w, http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/10320266_10202560286825296_2733680271324771351_n.jpg 266w"
+                    sizes="(max-width: 150px) 100vw, 150px"></a>&nbsp;Andria Pow­ell (Mem­ber­ship Com­mit­tee Chair)</li>
+              <li><a href="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/540607_4222006985455_1493911912_n.jpg" rel="fancybox"><img class="alignnone wp-image-448"
+                    src="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/540607_4222006985455_1493911912_n-150x150.jpg" alt="540607_4222006985455_1493911912_n" width="82"
+                    srcset="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/540607_4222006985455_1493911912_n-150x150.jpg 150w, http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/540607_4222006985455_1493911912_n-144x144.jpg 144w"
+                    sizes="(max-width: 150px) 100vw, 150px"></a>&nbsp;Meghan Zahn&nbsp;(Group Run Com­mit­tee Chair)</li>
+              <li><a href="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/New-BRC-pic.jpg" rel="fancybox"><img class="alignnone wp-image-431"
+                    src="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/New-BRC-pic-150x150.jpg" alt="New BRC pic" width="82"
+                    srcset="http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/New-BRC-pic-150x150.jpg 150w, http://bellevillerunningclub.com/home/content/37/10365237/html/wp-content/uploads/2014/08/New-BRC-pic-144x144.jpg 144w"
+                    sizes="(max-width: 150px) 100vw, 150px"></a>&nbsp;Sarah West (PR Com­mittee Chair)</li>
+            </ul>
+          </div>
+          <div style="float: left; width: 100%;">
+            <div style="float: left; width: 30%;"></div>
+            <div style="float: left; width: 100%;">
+              <div style="float: right; width: 25%;"></div>
+              <div style="float: left; width: 100%;">
+                <div style="float: right; width: 25%;"></div>
+                <div style="float: left; width: 100%;">
+                  <h2>2012 Board of Directors</h2>
+                  <p>Molly Hepp, Doug Havlin, Toby Trapp, Dan Trapp</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div class="clear"></div>
+  </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>

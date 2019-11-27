@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Run BLV</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    body {
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  </style>
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+  </style>
+  <script type="text/javascript">
+    function toggleDropdown(e) {
+      const _d = $(e.target).closest('.dropdown'),
+        _m = $('.dropdown-menu', _d);
+      setTimeout(function() {
+        const shouldOpen = e.type !== 'click' && _d.is(':hover');
+        _m.toggleClass('show', shouldOpen);
+        _d.toggleClass('show', shouldOpen);
+        $('[data-toggle="dropdown"]', _d).attr('aria-expanded', shouldOpen);
+      }, e.type === 'mouseleave' ? 300 : 0);
+    }
+
+    $('body')
+      .on('mouseenter mouseleave', '.dropdown', toggleDropdown)
+      .on('click', '.dropdown-menu a', toggleDropdown);
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-flex-box">
+      <img src="../img/brc-logo.png" alt="">
+      <div class="nav-flex-child">
+        <h1>Belleville Running Club</h1>
+        <p>Located in <a href="https://goo.gl/maps/af2ELo83fruNWz4D9" target="_blank">Belleville, IL</a></p>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <a class="nav-link" href="../index.html" style="color: black">Home</a>
+          <a class="nav-link" href="group-runs.html" style="color: black">Group Runs</a>
+          <a class="nav-link" href="running-in-belleville.html" style="color: black">Run BLV</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Events</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="calendar.html">Calendar</a>
+              <a class="dropdown-item" href="river-to-river-relay.html">River To River Relay</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Training</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="training-beginner.html">Couch To 5K Training</a>
+              <a class="dropdown-item" href="half-full-marathon-training-program.html">Marathon Training Program</a>
+            </div>
+          </li>
+          <a class="nav-link" href="about-brc.html" style="color: black">About BRC</a>
+          <a class="nav-link" href="blog.html" style="color: black">Blog</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Membership</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="join-now.html">Join Now</a>
+              <a class="dropdown-item" href="members.html">Members</a>
+              <a class="dropdown-item" href="bam-award.html">Belleville Running Club Awesome Member (BAM) Award</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <style media="screen">
+    main h1 {
+      text-align: center;
+    }
+
+    main p {
+      text-align: center;
+    }
+  </style>
+  <main>
+    <h1>Running in Belleville</h1>
+    <p>If you’re new to the area or new to running in the area, here’s a little guide to some of the best places to run in and around Belleville.</p>
+    <br>
+    <br>
+    <br>
+    <h1 style="color:blue;">Parks, schools, roads, etc</h1>
+    <p>Here is the list of the more common places that we tend to run.</p>
+    <table class="table">'
+      <thead>
+        <h1>Parks (In Belleville)</h1>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Park Name</th>
+          <th scope="col">Length</th>
+          <th scope="col">Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td><a href="https://www.belleville.net/Facilities/Facility/Details/Belleville-Bike-TrailRichland-Creek-Gree-15" target="_blank">
+              Richland Creek Greenway/MetroLink Trail</a></td>
+          <td>6.4 Miles</td>
+          <td>Belleville</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td><a href="https://www.belleville.net/Facilities/Facility/Details/Laderman-Park-11" target="_blank">
+              Laderman Park</a></td>
+          <td>1 Mile asphalt loop</td>
+          <td>Belleville</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td><a href="https://www.belleville.net/Facilities/Facility/Details/Bellevue-Park-1" target="_blank">Bellevue Park</a></td>
+          <td>1 Mile loop</td>
+          <td>Belleville</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table">'
+      <thead>
+        <h1>Schools</h1>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Park Name</th>
+          <th scope="col">Length</th>
+          <th scope="col">Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td><a href="https://website.bths201.org/index.php/schools/west" target="_blank">BLV West High School</a></td>
+          <td>Unknown</td>
+          <td>Belleville West</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td><a href="https://website.bths201.org/index.php/schools/east">BLV East High School</a></td>
+          <td>Unknown</td>
+          <td>Belleville East</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table">'
+      <thead>
+        <h1>Parks (Around Belleville)</h1>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Park Name</th>
+          <th scope="col">Length</th>
+          <th scope="col">Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td><a href="http://www.fairviewheightscity.com/0" target="_blank">LongAcre (Moody Park)</a></td>
+          <td>1 1/2 Miles</td>
+          <td>Fairview, IL</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>St.Ellen Mine</td>
+          <td>1.2 Mile path</td>
+          <td>O'Fallon, IL</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td><a href="https://shilohil.org/parks-recreation/" target="_blank">Bellevue Park</a></td>
+          <td>1/2 Mile loop</td>
+          <td>Shiloh, IL</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td><a href="https://shilohil.org/parks-recreation/" target="_blank">Forest Park</a></td>
+          <td>Depends on the path you take.</td>
+          <td>Saint Louis, MO</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table">'
+      <thead>
+        <h1>Other</h1>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Park Name</th>
+          <th scope="col">Length</th>
+          <th scope="col">Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td><a href="http://lawdayrun.com/raceinformation.html" target="_blank">Law Day Run Course</a></td>
+          <td>3.1 Miles</td>
+          <td>Downtown, Belleville</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <section style="padding-top: 30px;">
+    <h1>Local Races</h1>
+    <p>Please check out our <a href="calendar.html">calendar</a> for a listing of local races.
+      Our calendar is focused on races in Illinois and those which our members are involved.</p>
+    <p>The most complete race calendar for the entire
+      St Louis area is the <a href="https://www.stlouistrackclub.com/running-resources/race-calendar/">St Louis Track Club’s calendar</a>.</p>
+    <h1>Local Running Clubs</h1>
+    <p>There are several other running clubs in the area. Here are few</p>
+    <ul>
+      <li><a href="#">St. Louis Track Club(St. Louis, MO)</a></li>
+      <li><a href="#">Road Warriors (Scott AFB, IL)</a></li>
+      <li><a href="#">Metro Milers (Edwardsville, IL)</a></li>
+      <li><a href="#">Alton Road Runners (Alton, IL)</a></li>
+      <li><a href="#">YMCA Run Club (Maryville, IL)</a></li>
+      <li><a href="#">Mile Markers (Centralia, IL)</a></li>
+      <li><a href="#">Fleet Feet Runners (St. Charles, MO)</a></li>
+      <li><a href="#">St. Louis Ultrarunners Group (St.Louis, MO)</a></li>
+    </ul>
+    <h1>Local Walking Clubs</h1>
+    <ul>
+      <li><a href="https://www.facebook.com/groups/294562647408525/">Belleville Walking Club</a></li>
+      <li><a href="http://www.illinois-trekkers.org/">Illinois Trekkers</a></li>
+    </ul>
+    <h1>Local Cycling / Triathlon Clubs</h1>
+    <p>There are also quite a few cylcing and triathlon clubs in the area. Here are a few.</p>
+    <ul>
+      <li><a href="http://bellevegascycling.com/">Bellevegas Cycling Team</a></li>
+      <li><a href="http://www.bike2eat.org/">Belleville Area Bicycling and Eating Society (BABES)</a></li>
+      <li><a href="http://metroeastcycling.org/">Metro East Cycling</a></li>
+      <li><a href="https://www.thedriven.net/cs/metrotriclub/page.detail?page_id=1">Metro Tri-Club</a></li>
+      <li><a href="https://www.sbrtrishop.com/Tri-Club/tri-club.html">Swim Bike Run Tri Club and Elite Team</a></li>
+      <li><a href="http://www.stlouistriclub.com/">St. Louis Triathlon Club</a></li>
+
+    </ul>
+  </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>

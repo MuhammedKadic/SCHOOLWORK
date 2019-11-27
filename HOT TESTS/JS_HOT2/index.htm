@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--
+      JavaScript
+
+      Author:
+      Date:
+
+      Filename: index.htm
+   -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Hands-on Project 7-3</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>
+      Hands-on Test Chapter 4<br> <span style="font-size: 20px;" id="date"></span>
+    </h1>
+  </header>
+
+  <article>
+    <h2>Steam Game Sale</h2>
+    <form>
+      <input type="checkbox" id="item1" value="1999" />
+      <label for="item1">Counter Strike ($19.99)</label>
+      <input type="checkbox" id="item2" value="2999" />
+      <label for="item2">Dark Souls III ($29.99)</label>
+      <input type="checkbox" id="item3" value="1349" />
+      <label for="item3">Enter The Gungeon ($13.49)</label>
+      <input type="checkbox" id="item4" value="499" />
+      <label for="item4">Hover Junkers ($4.99)</label>
+      <input type="checkbox" id="item5" value="899" />
+      <label for="item5">Good Robot ($8.99)</label>
+      <input type="button" value="Calculate" id="sButton" />
+    </form>
+    <table>
+      <colgroup>
+        <col class="label" />
+        <col class="amount" />
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>Item total</td>
+          <td>0.00</td>
+        </tr>
+        <tr>
+          <td>Tax</td>
+          <td>0.00</td>
+        </tr>
+        <tr>
+          <td>Total with tax</td>
+          <td>$0.00</td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
+  <script>
+    let $ = function(id) {
+      return document.getElementById(id);
+    };
+
+    let $$ = function(tag) {
+      return document.getElementsByTagName(tag);
+    }
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+    let d = new Date();
+    $('date').innerHTML = days[d.getDay()] + " " + months[d.getMonth()] + " " + d.getDate() + " " + d.getFullYear();
+    "use strict";
+    // function to add values of selected check boxes and display total
+    function calcTotal() {
+      var itemTotal = 0;
+      var tax = 0;
+      var totalWithTax = 0;
+      items = $$("input");
+      var cells = $$("td");
+      // WRONG AMOUNT OF LOOP NUMBERS
+      for (var i = 0; i < 5; i++) {
+        if (items[i].checked) {
+          itemTotal += (items[i].value * 1);
+          items[i].checked = false;
+        }
+      }
+      tax = itemTotal * 0.05;
+      // WRONG NAME
+      totalWithTax = itemTotal + tax;
+      cells[1].innerHTML = (itemTotal / 100).toFixed(2);
+      cells[3].innerHTML = (tax / 100).toFixed(2);
+      cells[5].innerHTML = "$" + (totalWithTax / 100).toFixed(2);
+    }
+
+    // add event listener to Submit button
+    var submitButton = $("sButton");
+    if (submitButton.addEventListener) {
+      //THIS HAD A "" THESE IN IT && MISSING SECOND "
+      submitButton.addEventListener("click", calcTotal, false);
+    } else if (submitButton.attachEvent) {
+      submitButton.attachEvent("onclick", calcTotal);
+    }
+  </script>
+</body>
+
+</html>

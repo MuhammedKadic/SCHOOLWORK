@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>River To River Relay</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    body {
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+  </style>
+  <script type="text/javascript">
+    function toggleDropdown(e) {
+      const _d = $(e.target).closest('.dropdown'),
+        _m = $('.dropdown-menu', _d);
+      setTimeout(function() {
+        const shouldOpen = e.type !== 'click' && _d.is(':hover');
+        _m.toggleClass('show', shouldOpen);
+        _d.toggleClass('show', shouldOpen);
+        $('[data-toggle="dropdown"]', _d).attr('aria-expanded', shouldOpen);
+      }, e.type === 'mouseleave' ? 300 : 0);
+    }
+
+    $('body')
+      .on('mouseenter mouseleave', '.dropdown', toggleDropdown)
+      .on('click', '.dropdown-menu a', toggleDropdown);
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-flex-box">
+      <img src="../img/brc-logo.png" alt="">
+      <div class="nav-flex-child">
+        <h1>Belleville Running Club</h1>
+        <p>Located in <a href="https://goo.gl/maps/af2ELo83fruNWz4D9" target="_blank">Belleville, IL</a></p>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <a class="nav-link" href="../index.html" style="color: black">Home</a>
+          <a class="nav-link" href="group-runs.html" style="color: black">Group Runs</a>
+          <a class="nav-link" href="running-in-belleville.html" style="color: black">Run BLV</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Events</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="calendar.html">Calendar</a>
+              <a class="dropdown-item" href="river-to-river-relay.html">River To River Relay</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Training</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="training-beginner.html">Couch To 5K Training</a>
+              <a class="dropdown-item" href="half-full-marathon-training-program.html">Marathon Training Program</a>
+            </div>
+          </li>
+          <a class="nav-link" href="about-brc.html" style="color: black">About BRC</a>
+          <a class="nav-link" href="blog.html" style="color: black">Blog</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Membership</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="join-now.html">Join Now</a>
+              <a class="dropdown-item" href="members.html">Members</a>
+              <a class="dropdown-item" href="bam-award.html">Belleville Running Club Awesome Member (BAM) Award</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <h1 style="text-align:center;">River To Relay</h1>
+
+  <div class="flex-box" style="display:flex; text-align:center; justify-content:center;">
+    <img src="http://bellevillerunningclub.com/wp-content/uploads/2013/03/R2R-2010-1st-217x300.gif" alt="">
+    <div class="flex-2" style="flex-direction:column;">
+      <p style="padding-left: 20px;">The Belleville Running Club has entered teams in the <a href="http://rrr.olm.net/">River to River Relay</a> since 2006.</p>
+      <br>
+      <div class="flex-box-column" style="display:flex; flex-direction:column; padding-left:20px;">
+        <h1>RRR 2019</h1>
+        <p>The BRC will register for teams in the 2019 River to River Relay.</p>
+
+        <p>Details on the race:</p>
+
+        <p>April 13, 2019 (we will go to Marion on 04/12 and return on 04/14)</p>
+        <p>Race website: <a href="http://rrr.olm.net/"></a>http://rrr.olm.net/</p>
+        <p>BRC Registration: <a href="http://bellevillerunningclub.com/river-to-river-relay/rrr-2019-brc-signup-form/">http://bellevillerunningclub.com/river-to-river-relay/rrr-2019-brc-signup-form/</p></a>
+      </div>
+    </div>
+  </div>
+  <h1 style="text-align: center; padding-top: 30px;">Previous Years</h1>
+  <h1>RRR 2006</h1>
+  <p>The 2006 River to River Relay was our first foray into the race. We were clueless. All we knew was that the race was an 80 mile relay split between at least 8 runners. How hard could running 10 miles, broken up into 3 segments, be? After
+    all,
+    <div style="display: flex;">
+      <div style="flex-direction: column; text-align:center;">
+        <p>most of us had run marathons. We eventually struggled through the hills and “finished” with a time of 11:40:10</p>
+        <h1>RRR 2007/2008</h1>
+        <p>After the 2006 race, we vowed to be better prepared and kick some butt in 2007. The hills weren’t any easier, but we did much better.</p>
+      </div>
+      <img src="http://farm4.static.flickr.com/3067/2428010139_83b924f459.jpg" alt="">
+    </div>
+    <div id="blank">
+      <img src="http://farm3.static.flickr.com/2360/2428016905_86ac16f7e5.jpg" alt="">
+      <p>Our 2007 finishing time was 10:44:26 (8:03 min/mi pace). The 2008 race was a little interesting. Due to excessive storms, the first leg of the race was eliminated. Our 2008 finishing times (we had two teams) were 9:18:23 (7:19
+        pace) and
+        9:46:22 (7:40 pace).</p>
+    </div>
+    <h1>RRR 2009</h1>
+    <div>
+      <p>The 2009 race was our fourth year and we felt like veterans. </p>
+      <img src="http://farm5.static.flickr.com/4034/4454338692_571f081acd.jpg" alt="">
+    </div>
+    <p>Our 2009 finishing times were 10:05:43 (7:34 pace), 10:09:55 (7:37 pace), and 10:40:41 (8:01) finishing pace.</p>
+
+    <h1>RRR 2010</h1>
+    <p>The <a href="http://rrr.olm.net/">River to River Relay</a> took place on April 17, 2010. We entered 3 teams and all 3 teams performed well. Our fastest team finished 26 (out of 236) and won the running club division. This was the fourth year
+      that we have participated in the
+      relay.
+      Check out the River to River<a href="http://rrr.olm.net/results10.htm"> Overall Results</a> and <a href="http://rrr.olm.net/specials10.htm">Special Division Awards</a> for our results.
+      If you’re curious, here is a <a href="http://bellevillerunningclub.com/river-to-river-relay/R2R-2010_Results.pdf">spreadsheet of our times</a> broken out per runner.</p>
+
+    <h1>RRR 2011</h1>
+    <p>ANOTHER GREAT YEAR</p>
+    <br>
+    <br>
+    <h1>RRR 2012</h1>
+    <p>ANOTHER GREAT YEAR</p>
+    <br>
+    <br>
+    <h1>RRR 2013</h1>
+    <p>We really need to write something here. But, what happens at RRR stays at RRR. Pat…I won’t say anything at all!</p>
+    <br><br><br>
+    <h1>RRR 2014</h1>
+    <p>Only two teams in 2014, but we had a great time.</p>
+    <br>
+    <br>
+    <br>
+    <h1>RRR 2015</h1>
+    <p>Three teams in 2015. The thunderstorms cut the day short for two of our teams, but it was still an awesome time!</p>
+    <br>
+    <br>
+    <br>
+    <h1>RRR 2016</h1>
+    <p>Three teams in 2016. One team of four, one team of six, and one team of eight. It was a tough, hot year! One of the three teams, placed second in the Running Club division with a time of 10:52:17.</p>
+    <br>
+    <br>
+    <br>
+    <h1>RRR 2017</h1>
+    <p>Two teams in 2017. Good times 🙂</p>
+    <br>
+    <br>
+    <br>
+    <h1>RRR 2018
+    </h1>
+    <p>Two teams in 2018. After nearly 80 miles of running, our two teams finished within a fraction of a second of each other. Both teams finished at 10:50:48.</p>
+    <div style="display:flex;">
+      <img src="https://farm1.staticflickr.com/870/40821900155_ddb5d99bea_n.jpg" alt="">
+      <img src="https://farm1.staticflickr.com/965/39913744060_ac4553f90a_n.jpg" alt="">
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>

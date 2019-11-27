@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>FlexBox</title>
+</head>
+<style media="screen">
+  body {
+    background-image: url("flexfroggy.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  @media only screen and (max-width: 960px) {
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    ul li {
+      list-style-type: none;
+      padding: 20px 20px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      border: 2px solid black;
+      padding: 10px;
+      background: linear-gradient(to bottom, rgba(252, 236, 252, 1) 0%, rgba(251, 166, 225, 1) 50%, rgba(253, 137, 215, 1) 51%, rgba(255, 124, 216, 1) 100%);
+
+    }
+  }
+
+
+  @media only screen and (min-width: 960px) {
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    ul li {
+      list-style-type: none;
+      border: 2px solid black;
+      padding: 20px;
+      background: linear-gradient(to bottom, rgba(252, 236, 252, 1) 0%, rgba(251, 166, 225, 1) 50%, rgba(253, 137, 215, 1) 51%, rgba(255, 124, 216, 1) 100%);
+    }
+
+  }
+</style>
+
+<body>
+  <nav>
+    <div class="navbar">
+      <ul>
+        <li><a href="#blank">Home</a></li>
+        <li><a href="#blank">Contact us</a></li>
+        <li><a href="#blank">About Us</a></li>
+        <li><a href="#blank">Welcome</a></li>
+        <li><a href="#blank">Good News</a></li>
+      </ul>
+    </div>
+  </nav>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>About BRC</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    body {
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  </style>
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+  </style>
+  <script type="text/javascript">
+    function toggleDropdown(e) {
+      const _d = $(e.target).closest('.dropdown'),
+        _m = $('.dropdown-menu', _d);
+      setTimeout(function() {
+        const shouldOpen = e.type !== 'click' && _d.is(':hover');
+        _m.toggleClass('show', shouldOpen);
+        _d.toggleClass('show', shouldOpen);
+        $('[data-toggle="dropdown"]', _d).attr('aria-expanded', shouldOpen);
+      }, e.type === 'mouseleave' ? 300 : 0);
+    }
+
+    $('body')
+      .on('mouseenter mouseleave', '.dropdown', toggleDropdown)
+      .on('click', '.dropdown-menu a', toggleDropdown);
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-flex-box">
+      <img src="../img/brc-logo.png" alt="">
+      <div class="nav-flex-child">
+        <h1>Belleville Running Club</h1>
+        <p>Located in <a href="https://goo.gl/maps/af2ELo83fruNWz4D9" target="_blank">Belleville, IL</a></p>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <a class="nav-link" href="../index.html" style="color: black">Home</a>
+          <a class="nav-link" href="group-runs.html" style="color: black">Group Runs</a>
+          <a class="nav-link" href="running-in-belleville.html" style="color: black">Run BLV</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Events</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="calendar.html">Calendar</a>
+              <a class="dropdown-item" href="river-to-river-relay.html">River To River Relay</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Training</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="training-beginner.html">Couch To 5K Training</a>
+              <a class="dropdown-item" href="half-full-marathon-training-program.html">Marathon Training Program</a>
+            </div>
+          </li>
+          <a class="nav-link" href="about-brc.html" style="color: black">About BRC</a>
+          <a class="nav-link" href="blog.html" style="color: black">Blog</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Membership</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="join-now.html">Join Now</a>
+              <a class="dropdown-item" href="members.html">Members</a>
+              <a class="dropdown-item" href="bam-award.html">Belleville Running Club Awesome Member (BAM) Award</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <h1>About BRC</h1>
+  <p>Want to learn some more about the Belleville Running Club? Well, you’re in the right place. Please <a href="mailto:brc@bellevillerunningclub.com">e-mail us</a> should you need any additional information. </p>
+  <br>
+  <h1>Where else can you find us?</h1>
+  <p>Join Our <a href="https://groups.yahoo.com/groups/BellevilleRunningClub">Yahoo Group</a>. We post times, dates, and locations of our group runs on a <a href="http://sports.groups.yahoo.com/group/BellevilleRunningClub/">Yahoo Group</a>.
+    The Yahoo Group works essentially like a mailing list. If you would like to keep abreast of all goings on, sign up for the <a href="https://groups.yahoo.com/groups/BellevilleRunningClub">Yahoo Group</a>.</p>
+  <br>
+  <p>Join our group on <a href="http://www.facebook.com/group.php?gid=4825939930">facebook</a> or follow our <a href="http://www.facebook.com/group.php?gid=4825939930">facebook</a>. While we will try to forward pertinent posts from the Yahoo Group to
+    the Facebook group, please join the Yahoo Group to guarantee you don’t miss anything.</p>
+  <br>
+  <p>Follow us on <a href="http://twitter.com/B_R_C">Twitter</a></p>
+  <p>Follow us on <a href="https://www.instagram.com/bellevillerunningclub/">Instagram</a></p>
+  <p>Join our group and look at our courses on <a href="http://www.mapmyrun.com/community/groups/878526437233">Mapmyrun.com.</a></p>
+  <p>Join our group on <a href="https://www.strava.com/clubs/belleville-running-club-105298">Strava.com</a>.</p>
+  <h2>MORE Information</h2>
+  <div class="row-fluid">
+    <div class="span4">
+      <h2>What is our purpose?</h2>
+      <p>The Belleville Running Club, informally organized in 2005, was founded with the simple goal of trying to assemble like minded individuals (runners) to share the often mundane task of the “long run.” Over the years, the BRC has developed into
+        quite a bit more. Although we have only recently become officially organized, many of us have formed some pretty good friendships while developing a civic-minded group that promotes and supports running in the Belleville area.</p>
+      <p>The official purpose of the BRC (per our bylaws) is to promote and encourage running as a sport and as a means of healthful exercise in our community; to promote and conduct races or other activities; to disseminate information through
+        newsletters, flyers, presentations, meetings, and educational programs; and to offer opportunities for organized and informal socializing by members.</p>
+      <p>In addition to our group runs, we have been involved in the Belleville Chili Cookoff, we enter teams in the annual River to River Relay, we have participated in the Get Up and Go campaign, and we participate in the city’s adopt-a-trail
+        program.</p>
+      <p>Our membership ranges from beginning runners training for their first 5K to runners that have completed dozens of marathons.</p>
+    </div>
+    <div class="span8">
+      <h2>Frequently Asked Questions</h2>
+      <p>Hopefully this will answer most of your questions about the Belleville Running Club. If you have any additional questions, please feel free to <a href="mailto:brc@bellevillerunningclub.com">e-mail us</a>.</p>
+      <p>If you are a beginner runner and looking for the FAQ’s on the beginner’s program, please go to the <a href="training-beginner/">beginner’s page</a>.</p>
+      <h3>Are there any water stops along your runs?</h3>
+      <p>There are water fountains and restrooms at the Belleville MetroLink station and we always break for water at the end of each lap.</p>
+      <h3>What if I’m a real slow / real fast runner?</h3>
+      <p>Our ultimate goal is to have a diverse group or runners who run a wide variety of paces.</p>
+      <h3>Can I buy a BRC Shirt?</h3>
+      <p>Please see our <a href="join-now.html">Members</a> page for ordering information or visit or <a href="http://www.runbrc.com">online store</a>.</p>
+      <h3>What if I don’t want to run a billion miles like some of you?</h3>
+      <p>We typically run a 3-mile or 5-mile loop. Feel free to run as many or as few laps as you’d like.</p>
+      <h3>Do I have to be a member to join the group runs?</h3>
+      <p><strong>No.</strong> We do encourage you to join if you find that you enjoy the club because you’ll get benefits such as discounted BRC merchandise, discounts on member friendly races, discount codes from our sponsors, and <a
+          href="join-now.html">more!</a></p>
+      <h3>How much does membership cost?</h3>
+      <p>Please see our <a href="join-now.html">Members</a> page for current prices and details on member benefits</p>
+    </div>
+  </div>
+  <footer class="blog-footer">
+    <p>&copy; 2019 Belleville Running Club. All Rights Reserved. Proudly Built by Muhammed Kadic</p>
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>

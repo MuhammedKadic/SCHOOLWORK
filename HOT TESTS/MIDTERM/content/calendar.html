@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calendar</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Bootstrap Dropdown Hover CSS -->
+  <link href="../css/animate.min.css" rel="stylesheet">
+  <link href="../css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    body {
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  </style>
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+  </style>
+  <script type="text/javascript">
+    function toggleDropdown(e) {
+      const _d = $(e.target).closest('.dropdown'),
+        _m = $('.dropdown-menu', _d);
+      setTimeout(function() {
+        const shouldOpen = e.type !== 'click' && _d.is(':hover');
+        _m.toggleClass('show', shouldOpen);
+        _d.toggleClass('show', shouldOpen);
+        $('[data-toggle="dropdown"]', _d).attr('aria-expanded', shouldOpen);
+      }, e.type === 'mouseleave' ? 300 : 0);
+    }
+
+    $('body')
+      .on('mouseenter mouseleave', '.dropdown', toggleDropdown)
+      .on('click', '.dropdown-menu a', toggleDropdown);
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-flex-box">
+      <img src="../img/brc-logo.png" alt="">
+      <div class="nav-flex-child">
+        <h1>Belleville Running Club</h1>
+        <p>Located in <a href="https://goo.gl/maps/af2ELo83fruNWz4D9" target="_blank">Belleville, IL</a></p>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <a class="nav-link" href="../index.html" style="color: black">Home</a>
+          <a class="nav-link" href="group-runs.html" style="color: black">Group Runs</a>
+          <a class="nav-link" href="running-in-belleville.html" style="color: black">Run BLV</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Events</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="calendar.html">Calendar</a>
+              <a class="dropdown-item" href="river-to-river-relay.html">River To River Relay</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Training</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="training-beginner.html">Couch To 5K Training</a>
+              <a class="dropdown-item" href="half-full-marathon-training-program.html">Marathon Training Program</a>
+            </div>
+          </li>
+          <a class="nav-link" href="about-brc.html" style="color: black">About BRC</a>
+          <a class="nav-link" href="blog.html" style="color: black">Blog</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black">Membership</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="join-now.html">Join Now</a>
+              <a class="dropdown-item" href="members.html">Members</a>
+              <a class="dropdown-item" href="bam-award.html">Belleville Running Club Awesome Member (BAM) Award</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <style media="screen">
+    .lists ul li {
+      list-style-type: none;
+    }
+
+    .lists {
+      text-align: center;
+    }
+  </style>
+  <div class="lists">
+    <h1 style="text-align:center;">Calendar</h1>
+    <p style="text-align:center;">To Submit an event, please
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdisbhIPAvVawaMn9WIl1p5b57XOsFQig6J3xvJh32FHW-1OQ/viewform">
+        Complete our form</a>. Any Questions, email <a href="mailto:brc@bellevillerunningclub.com?subject=feedback">brc@bellevillerunningclub.com</a></p>
+    <h1>Featured Races</h1>
+    <p><i>ALL BRC MEMBERS, PLEASE e-mail brc@bellevillerunningclub.com for info on how to get the BRC discounts for the following races.</i></p>
+    <h1 style="font-size: 20px;">Have you Heard of Minnie Ha Ha 5K</h1>
+    <ul>
+      <li>Saturday, October 26, 2019</li>
+      <li>St. Louis, MO</li>
+      <li>Race Registration: <a href="https://www.mseracing.com/minnie-haha.html">https://www.mseracing.com/minnie-haha.html</a></li>
+    </ul>
+    <h1 style="font-size: 20px;">OWNA CommUNITY 5K</h1>
+    <ul>
+      <li>Saturday, November 9, 2019</li>
+      <li>Belleville, IL</li>
+      <li>Race Website: <a href="https://5d10ca3262230.site123.me/events/owna-community-5k">https://5d10ca3262230.site123.me/events/owna-community-5k</a></li>
+      <li>Race Registration: <a href="http://www.123formbuilder.com/form-4784157/owna-community-registration">http://www.123formbuilder.com/form-4784157/owna-community-registration</a>
+      </li>
+    </ul>
+    <h1 style="font-size: 20px;">Four Legged Running Half Marathon, 5K, and Dog Mile</h1>
+    <ul>
+      <li>Sunday, November 17, 2019</li>
+      <li>Mascoutah, IL</li>
+      <li>Register at: <a href="https://www.fourleggedrunning.com/road-race">https://www.fourleggedrunning.com/road-race</a></li>
+    </ul>
+    <h1 style="font-size: 20px;">Belleville Thanksgiving 5K Run & Turkey Chase</h1>
+    <ul>
+      <li>Thursday, November 28, 2019</li>
+      <li>Belleville, IL</li>
+      <li>Race Registration: <a
+          href="https://www.active.com/belleville-il/running/distance-running/belleville-thanksgiving-5k-run-and-turkey-chase-2019">https://www.active.com/belleville-il/running/distance-running/belleville-thanksgiving-5k-run-and-turkey-chase-2019</a>
+      </li>
+      <li>Race Website: <a href="http://www.bellevillethanksgivingdayrun.com/">http://www.bellevillethanksgivingdayrun.com/</a></li>
+    </ul>
+    <h1 style="font-size: 20px;">Chiro-Med Winter Luau 5K & Main Street Mile</h1>
+    <ul>
+      <li>Saturday, January 25, 2020</li>
+      <li>Belleville, IL</li>
+      <li>Race Registration: <a href="https://runsignup.com/Race/IL/Belleville/chiromedwinterluau5k"> https://runsignup.com/Race/IL/Belleville/chiromedwinterluau5k</a></li>
+      <li>Race Website: <a href="https://chiromedbelleville.com/">https://chiromedbelleville.com/</a></li>
+    </ul>
+
+    <h1>Main Street Marathon (5th Annual)</h1>
+    <ul>
+      <li style="list-style-type:none;"><img src="../img/marathon.png" alt=""></li>
+      <br>
+      <li>(Registration for the 2020 race has not yet opened)</li>
+      <li>Saturday, September 26th, 2020</li>
+      <li>Belleville, IL</li>
+      <li>Race Website: <a href="http://www.bellevillemarathon.com/">http://www.bellevillemarathon.com/</a></li>
+      <li>Race Registration: <a href="https://bellevillemainstreetmarathon.itsyourrace.com/event.aspx?id=6976">https://bellevillemainstreetmarathon.itsyourrace.com/event.aspx?id=6976</a></li>
+      <li>Facebook Page: <a href="https://www.facebook.com/Belleville-Main-Street-Marathon-233984440267268/">https://www.facebook.com/Belleville-Main-Street-Marathon-233984440267268/</a></li>
+    </ul>
+    <h1 style="color: blue;align-content: center;">Google Calendar of Local Races and BRC Events</h1>
+    <iframe src="https://calendar.google.com/calendar/embed?src=qu17k50fc325pplgtn1dumj71o%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Bootstrap Dropdown Hover JS -->
+<script src="../js/bootstrap-dropdownhover.min.js"></script>
+
+</html>
