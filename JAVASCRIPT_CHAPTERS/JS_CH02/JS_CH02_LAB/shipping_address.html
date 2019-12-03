@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Shipping Address</title>
+  <style media="screen">
+    .flex-box {
+      display: flex;
+      justify-content: center;
+    }
+
+    .wrapper {
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    h3 {
+      +
+      text-align: center;
+    }
+    .flex-box-2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+    * {
+      text-align: center;
+    }
+
+    header {
+      background-color: #ccc;
+    }
+
+    form {
+      background-color: burlywood;
+      height: 50vh;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Hands-on Project 1-4</h1>
+    </header>
+    <h3>Shipping Address</h3>
+    <form>
+        <div class="flex-box">
+          <input type="radio" name="option1" id="address1" onclick="onOption1Click()"><label for="">
+            <span id="address">4712 Tonga Drive</span>,
+            <br><span id="city">Saint Louis</span>,
+            <span id="state">MO</span>
+            <span id="zip-code">63128</span></label>
+
+          <input type="radio" name="option1" id="address2" onclick="onOption2Click()">
+          <label for=""><span id="address3">7700 Manchester Road</span>, <br><span id="city2">Saint Louis</span> <span id="state2">MO</span>
+            <span id="zip-code2">63712</span></label>
+        </div>
+        <div class="flex-box-2">
+
+        <label for="">Street Address</label><input type="text" id="address_input" name="" value=""><br>
+        <label for="">City</label><input type="text" id="city_input" name="" value=""><br>
+        <label for="">State</label><input type="text" id="state_input" name="" value=""><br>
+        <label for="">Zip</label><input type="text" id="zip_input" name="" value=""><br>
+      </div>
+
+    </form>
+  </div>
+  <script type="text/javascript">
+    function onOption1Click() {
+      var address = document.getElementById('address').innerHTML;
+      var city = document.getElementById('city').innerHTML;
+      var state = document.getElementById('state').innerHTML;
+      var zipcode = document.getElementById('zip-code').innerHTML;
+
+
+      document.getElementById('address_input').value = address;
+      document.getElementById('city_input').value = city;
+      document.getElementById('state_input').value = state;
+      document.getElementById('zip_input').value = zipcode;
+
+    }
+
+    function onOption2Click() {
+      var address = document.getElementById('address3').innerHTML;
+      var city = document.getElementById('city2').innerHTML;
+      var state = document.getElementById('state2').innerHTML;
+      var zipcode = document.getElementById('zip-code2').innerHTML;
+
+
+      document.getElementById('address_input').value = address;
+      document.getElementById('city_input').value = city;
+      document.getElementById('state_input').value = state;
+      document.getElementById('zip_input').value = zipcode;
+
+    }
+  </script>
+</body>
+
+</html>

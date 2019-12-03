@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    #moveevent {
+      display: none;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>These are my focus and blur links</h1>
+  <a href="#" id="link#1">Wow Link #1</a>
+  <a href="#" id="link#2">Wow Link #2</a>
+  <form>
+    <h1>This is the onclick function of a button.</h1>
+    <input type="button" id="button#1" name="" value="Button #1"><br>
+    <h1>This is the text-box change event</h1>
+    <input type="text" id="text-box-change" value="">
+    <h1>This is the text-box select event</h1>
+    <input type="text" id="text-box-select" value="">
+    <h1>This is the double click button</h1>
+    <input type="button" id="button#2" name="" value="Button #2"><br>
+  </form>
+  <h1>This demonstrate's the mouse enter and mouse leave event.</h1>
+  <p onmouseenter="bigImg(this)" onmouseleave="normalImg(this)">If you hover over this a function will be triggered.</p>
+  <h1 onmousemove="mouseMoveFunction()" onmouseleave="mouseLeaveEventFunction()">This is my on mouse move event (Hover over the text.)</h1>
+  <div class="" id="moveevent" onmousemove="mouseMoveFunction()"></div>
+
+  <script type="text/javascript">
+    "use strict";
+    var $ = function(id) {
+      return document.getElementById(id);
+    };
+
+    var mouseLeaveEventFunction = function() {
+      $('moveevent').style.display = "none";
+    }
+    var mouseMoveFunction = function() {
+      $('moveevent').style.display = "block";
+    }
+
+    function bigImg(x) {
+      x.style.height = "64px";
+      x.style.width = "20%";
+    }
+
+    function normalImg(x) {
+      x.style.height = "32px";
+      x.style.width = "100%";
+    }
+
+    var a = function() {
+      alert(Math.random());
+    }
+
+    var wow = function() {
+      return alert("you changed the location shame on you.");
+    }
+
+    var doubleClicked = function() {
+      alert('You Double clicked The Button WOW')
+    }
+
+    var blur1 = function() {
+      $('link#1').blur();
+    }
+    window.onload = function() {
+      $('button#1').onclick = a;
+      $('button#2').ondblclick = doubleClicked;
+      $('link#1').focus();
+      $('link#2').onclick = blur1;
+      $('text-box-change').value = "Change this and get a cool alert."
+      $('text-box-select').value = "Wow select this and get a cool alert!"
+      $('text-box-change').onchange = a;
+      $('text-box-select').onselect = a;
+
+    }
+  </script>
+</body>
+
+</html>

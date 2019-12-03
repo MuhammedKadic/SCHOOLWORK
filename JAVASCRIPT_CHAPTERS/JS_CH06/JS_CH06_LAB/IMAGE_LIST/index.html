@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>IMAGE_LIST</title>
+</head>
+
+<body>
+
+  <body>
+    <main>
+      <h1>Create Image List</h1>
+      <ul id="image_list"></ul>
+    </main>
+  </body>
+  <script>
+    "use strict";
+    var $ = function(id) {
+      return document.getElementById(id);
+    };
+    window.onload = function() {
+      $("image_list").innerHTML =
+        "<li><img src='images/1.jpg'></li>";
+      $("image_list").innerHTML +=
+        "<li><img src='images/2.jpg'></li>";
+      $("image_list").innerHTML +=
+        "<li><img src='images/3.jpg'></li>";
+      $("image_list").innerHTML +=
+        "<li><img src='images/4.jpg'></li>";
+    };
+  </script>
+
+</body>
+
+</html>

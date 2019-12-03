@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Order Form</title>
+  <style media="screen">
+    .wrapper {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+  <header>
+    <h1>Hands-on Project 1-3</h1>
+  </header>
+  <h3>Order Form</h3>
+  <form>
+    <label for="">name</label> <input id="name" type="text" name="" value="" required><br>
+    <label for="">email</label> <input id="email" type="text" name="" value="" required><br>
+    <button type="button" onclick="getButtonClick()" name="button">Submit</button>
+  </form>
+    </div>
+</body>
+<script type="text/javascript">
+  function getButtonClick() {
+    var nameInput = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+
+    alert("Thank you for your order!\n\n name: " + nameInput + "\n\n email: " + email);
+  }
+</script>
+
+</html>

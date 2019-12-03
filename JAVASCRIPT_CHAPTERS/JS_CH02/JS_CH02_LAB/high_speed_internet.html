@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    .wrapper {
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    header {
+      background-color: #ccc;
+      text-align: center;
+    }
+
+    main {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: burlywood;
+    }
+
+    table {
+      border: thin solid black;
+    }
+
+    td,
+    th {
+      border: thin solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Hands-on Proect 1-2</h1>
+    </header>
+    <main>
+      <h3>High Speed Internet Plans</h3>
+      <table>
+        <tr>
+          <th>Service</th>
+          <th>Download Speed(Mpbs)</th>
+        </tr>
+        <tr>
+          <td>Basic</td>
+          <td id="basic"></td>
+        </tr>
+        <tr>
+          <td>Express</td>
+          <td id="express"></td>
+        </tr>
+        <tr>
+          <td>Extreme</td>
+          <td id="extreme"></td>
+        </tr>
+        <tr>
+          <td>Ultimate</td>
+          <td id="ultimate"></td>
+        </tr>
+      </table>
+    </main>
+  </div>
+  <script type="text/javascript">
+    var basic = 5;
+    var express = 25;
+    var extreme = 50;
+    var ultimate = 150;
+
+    document.getElementById('basic').innerHTML = basic;
+    document.getElementById('express').innerHTML = express;
+    document.getElementById('extreme').innerHTML = extreme;
+    document.getElementById('ultimate').innerHTML = ultimate;
+  </script>
+</body>
+
+</html>

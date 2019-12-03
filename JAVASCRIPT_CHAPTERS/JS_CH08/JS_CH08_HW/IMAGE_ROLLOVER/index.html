@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#image_rollovers img').each(function() {
+        var oldURL = $(this).attr('src');
+        var newURL = $(this).attr('id');
+        var rolloverImage = new Image();
+        rolloverImage.src = newURL;
+
+        $(this).hover(function() {
+          $(this).attr('src', newURL);
+        }, function() {
+          $(this).attr('src', oldURL);
+        });
+      });
+    });
+  </script>
+  <style media="screen">
+    li {
+      display: inline;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Fishing Images</h1>
+    <p>Move your mouse over an image ot change it and back out of the image to restore the original image</p>
+    <ul id="image_rollovers">
+      <li><img src="images/release.jpg" alt="" id="images/deer.jpg"></li>
+      <li><img src="images/hero.jpg" alt="" id="images/bison.jpg"></li>
+    </ul>
+  </main>
+</body>
+
+</html>

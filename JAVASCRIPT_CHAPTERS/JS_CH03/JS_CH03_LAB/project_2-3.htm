@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript">
+    function calcBMI() {
+      let height = parseFloat(document.getElementById('height').value);
+      let weight = parseFloat(document.getElementById('weight').value);
+
+      let caluclatedBMI = parseFloat(weight * 703 / height ^ 2);
+
+      document.getElementById("result").value = caluclatedBMI;
+    }
+  </script>
+</head>
+
+<body>
+  <form>
+    <label for="">Weight (Pounds) </label><input id="weight" type="text" name="" value=""><br>
+    <label for="">Height (Inches) </label><input id="height" type="text" name="" value=""><br>
+    <label for="">Caluclated BMI </label><input id="result" type="text" readonly name="" value="">
+  </form>
+  <input type="submit" name="" value="Submit" onclick="calcBMI()">
+</body>
+
+</html>

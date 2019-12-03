@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>SLIDESHOW APPLICATION</title>
+  <style media="screen">
+    .MAIN_AREA {
+      border: 2px solid blue;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .MAIN_AREA {
+      text-align: center;
+    }
+
+    .buttons {
+      padding: 10px 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="MAIN_AREA">
+    <h1 style="color:blue;">Fishing Slide Show</h1>
+    <div class="buttons">
+      <input type="submit" id="button1" onclick="startSlideShow()" name="" value="Start">
+      <input type="submit" id="button2" onclick="pauseSlideShow()" name="" value="Pause" disabled>
+    </div>
+    <img id="source_tag" src="images/1.jpg" alt="">
+  </div>
+  <script type="text/javascript">
+    let count_position = 0;
+    let paused = false;
+    let startSlideShow = function() {
+      paused = false;
+      document.getElementById('button1').disabled = true;
+      document.getElementById('button2').disabled = false;
+      let interval = setInterval(function() {
+        if (paused == true) {
+          clearInterval(interval);
+          document.getElementById('button1').disabled = false;
+          document.getElementById('button2').disabled = true;
+        } else {
+          count_position++;
+          document.getElementById("source_tag").src = "images/" + count_position + ".jpg";
+
+          if (count_position == 4) {
+            clearInterval(interval);
+            startSlideShow();
+            count_position = 0;
+          }
+        }
+      }, 1500);
+    }
+
+    let pauseSlideShow = function() {
+      paused = true;
+    }
+  </script>
+</body>
+
+</html>

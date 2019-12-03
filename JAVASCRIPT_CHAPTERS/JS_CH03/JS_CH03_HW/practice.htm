@@ -1,0 +1,27 @@
+\<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <p id="result"></p>
+  <script type="text/javascript">
+    var temps = [];
+
+    temps[0] = "70";
+    temps[1] = "80";
+    temps[2] = "82";
+    temps[3] = "92";
+    temps[4] = "62";
+    temps[5] = "21";
+
+    for (var i = 0; i < temps.length; i++) {
+      document.getElementById('result').innerHTML += "\'"This"'\ Is the Temperature for day " + i + "<br>" + temps[i] + "<br>";
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript">
+    function calcShipping() {
+      let newPurchaseAmount;
+      let purchaseAmount = parseFloat(document.getElementById('purchase_amount').value);
+      if (purchaseAmount <= 25.00) {
+        newPurchaseAmount = purchaseAmount + 1.50;
+        document.getElementById("output").innerHTML = "Your shipping price is $1.50" + "<br> So your total would be $" + newPurchaseAmount;
+        console.log(newPurchaseAmount);
+        return;
+      } else if (purchaseAmount > 25.00) {
+        newPurchaseAmount = purchaseAmount * .10;
+        let percentageAdded = newPurchaseAmount + purchaseAmount;
+        console.log(newPurchaseAmount);
+        document.getElementById("output").innerHTML = "Your shipping price is $" + newPurchaseAmount + "<br> So your total would be $" + percentageAdded;
+        return;
+      } else {
+        console.log("ITS BROKe");
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <p>The minmun fee for shipping for purchases under $25 is $1.50.</p>
+  <form>
+    <label for="">Purchase Amount </label><input id="purchase_amount" type="text" name="" value="">
+  </form>
+  <br><input type="submit" value="Submit" onclick="calcShipping()">
+  <p id="output"></p>
+
+</body>
+
+</html>

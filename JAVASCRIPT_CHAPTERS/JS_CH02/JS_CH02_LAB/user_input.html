@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>USER INPUT</title>
+  <style media="screen">
+    * {
+      text-align: center;
+    }
+
+    header {
+      background-color: #ccc;
+    }
+
+    form {
+      background-color: burlywood;
+      height: 50vh;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Hands-on 1-5</h1>
+  </header>
+  <form>
+    <label for="">Name</label><input id="name" type="text" name="" value="" required>
+    <label for="">Age (In Years)</label><input id="age" type="text" name="" value="" required>
+    <br>
+    <button type="button" onclick="onClickButton()" name="button">Submit</button>
+    <p id="answer"></p>
+  </form>
+
+  <script type="text/javascript">
+    function onClickButton() {
+      var name = document.getElementById('name').value;
+      var age = parseInt(document.getElementById('age').value);
+
+      var calculatedAge = age * 364;
+
+      document.getElementById('answer').innerHTML = "Hello " + name + ", Your Current Age is " + age + " (in years) you have been alive for " + calculatedAge;
+    }
+  </script>
+</body>
+
+</html>

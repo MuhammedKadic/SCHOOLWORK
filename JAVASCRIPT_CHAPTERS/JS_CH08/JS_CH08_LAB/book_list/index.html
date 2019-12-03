@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+  <title></title>
+  <style media="screen">
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: #4A4E69;
+      font-weight: 300;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    p {
+      color: #4A4E69;
+      font-weight: 300;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    section {
+      width: 100%;
+      margin: 40px 0;
+      padding: 0 5%;
+    }
+
+    .section-heading {
+      text-transform: uppercase;
+      font-size: 1.6em;
+    }
+
+    hr {
+      max-width: 300px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0 auto;
+      padding: 20px;
+      width: 600px;
+    }
+
+    h1,
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 125%;
+      cursor: pointer;
+      padding-left: 25px;
+      background: url(plus.png) no-repeat left center;
+    }
+
+    h2.minus {
+      background: url(minus.png) no-repeat left center;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .wrapper {
+      border: solid blue thin;
+      margin-right: auto;
+      margin-left: auto;
+      width: 95%;
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper" style="display: flex;">
+    <div id="products">
+      <h1>Murach Products</h1>
+      <ul id="product_rollover">
+        <li><img alt="">
+          <h2>Book for open-source web developers</h2>
+          <div class="hidden">
+            <ul>
+              <li><a href="#" class="list_item" id="images/web_developers/htm5.jpg">Murach's HTML5 and CSS3 (Third Edition)</a></li>
+              <li><a href="#" class="list_item" id="images/web_developers/jquery.jpg">Murach's Javascript and jQuery</a></li>
+              <li><a href="#" class="list_item" id="images/web_developers/javascript.jpg">Murach's Javascript (2nd Edition)</a></li>
+              <li><a href="#" class="list_item" id="images/web_developers/jquery2nd.jpg">Murach's jQuery (2nd Edition)</a></li>
+              <li><a href="#" class="list_item" id="images/web_developers/php3.jpg">Murach's PHP and MYSQL (2nd Edition)</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><img alt="">
+          <h2>Books for Java programmers</h2>
+          <div class="hidden">
+            <ul>
+              <li><a href="#" class="list_item" id="images/java/java_plain.jpg">Murach’s Java Programming (5th Edition)</a></li>
+              <li><a href="#" class="list_item" id="images/java/java_netbeans.jpg">Murach's Beginning Java with NetBeans</a></li>
+              <li><a href="#" class="list_item" id="images/java/java_eclipse.jpg">Murach's Beginning Java with Eclipse</a></li>
+              <li><a href="#" class="list_item" id="images/java/java_jsp.jpg">Murach’s Java Servlets and JSP (3rd Edition)</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li><img alt="">
+          <h2>Books for .NET developers</h2>
+          <div class="hidden">
+            <ul>
+              <li><a href="#" id="images/cSharp/adoNET.jpg" class="list_item">Murach’s ASP.NET 4.6 Web Programming with C# 2015</a></li>
+              <li><a href="#" id="images/cSharp/aspNET.jpg" class="list_item">Murach’s C# 2015</a></li>
+              <li><a href="#" id="images/cSharp/csHARP_plain.jpg" class="list_item">Murach’s ADO.NET 4 Database Programming with C# 2010</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li><img alt="">
+          <h2>Books for database programmers</h2>
+
+          <div class="hidden">
+            <ul>
+              <li><a href="#" id="images/database/sql.jpg" class="list_item">Murach’s MySQL (3rd Edition)</a></li>
+              <li><a href="#" id="images/database/oracle.jpg" class="list_item">Murach’s Oracle SQL and PL/SQL for Developers (2nd Edition)</a></li>
+              <li><a href="#" id="images/database/sql2.jpg" class="list_item">Murach’s SQL Server 2016 for Developers</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <img id="image_change" style="height:200px; margin-top: auto; margin-bottom: auto;" src="" alt="">
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#products h2').click(function() {
+        $(this).toggleClass('minus');
+        if ($(this).attr('class') != 'minus') {
+          $(this).next().hide();
+        } else {
+          $(this).next().show();
+        }
+        event.preventDefault();
+      });
+      $('a.list_item').click(function() {
+        event.preventDefault();
+        var id = $(this).attr('id');
+        $('#image_change').attr("src", id);
+
+      });
+      $('#products').find('a:first').focus();
+    }); // end ready
+  </script>
+</body>
+
+</html>

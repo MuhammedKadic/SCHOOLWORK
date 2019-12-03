@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Make Change</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="make_change.js"></script>
+</head>
+
+<body>
+	<main>
+		<h1>Change Calculator</h1>
+
+		<label>Enter amount of change due (0-99):</label>
+		<input type="text" id="cents" />
+		<input type="button" value="Calculate" name="calculate" id="calculate" /><br><br>
+
+		<label>Quarters:</label>
+		<input type="text" id="quarters" disabled><br>
+
+		<label>Dimes:</label>
+		<input type="text" id="dimes" disabled><br>
+
+		<label>Nickels:</label>
+		<input type="text" id="nickels" disabled><br>
+
+		<label>Pennies:</label>
+		<input type="text" id="pennies" disabled><br>
+
+	</main>
+	<script type="text/javascript">
+		var $ = function(id) {
+			return document.getElementById(id);
+		};
+
+		let getChangeAmount = function() {
+			let user_input = parseInt($('cents').value);
+			clear();
+
+			if (user_input >= 25) {
+				let numq = parseInt(user_input / 25);
+				$('quarters').value = numq;
+				user_input = user_input - (numq * 25);
+			}
+			if (user_input >= 10) {
+				let numq = parseInt(user_input / 10);
+				$('dimes').value = numq;
+				user_input = user_input - (numq * 10);
+			}
+			if (user_input >= 5) {
+				let numq = parseInt(user_input / 5);
+				$('nickels').value = numq;
+				user_input = user_input - (numq * 5);
+			}
+			if (user_input >= 1) {
+				let numq = parseInt(user_input / 1);
+				$('pennies').value = numq;
+				user_input = user_input - (numq * 1);
+			}
+		}
+
+		let clear = function() {
+			$('pennies').value = "";
+			$('nickels').value = "";
+			$('dimes').value = "";
+			$('quarters').value = "";
+		}
+
+		window.onload = function() {
+			$('calculate').onclick = clear;
+			$('calculate').onclick = getChangeAmount;
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Test Score Array</title>
+	<link rel="stylesheet" href="styles.css" />
+	<script src="test_scores.js"></script>
+</head>
+
+<body>
+	<main>
+		<h1>Use a Test Score array</h1>
+		<span id="information-popup"></span>
+
+		<label for="name">Name:</label>
+		<input type="text" id="name"><br>
+
+		<label for="score">Score:</label>
+		<input type="text" id="score"><br>
+
+		<label>&nbsp;</label>
+		<input type="button" id="add" value="Add to Array">
+		<input type="button" id="display_results" value="Display Results">
+		<input type="button" id="display_scores" value="Display Scores"><br>
+
+		<div id="results">
+			<span id="this_span" style="color:blue; font-weight: bold; font-size: 25px;"></span>
+			<span id="average_score"></span>
+			<span id="highest_score"></span>
+		</div>
+		<h1 style="color:blue;font-size: 25px; padding-top: 10px;" id="scores_title"></h1>
+		<table id="scores_table">
+			<tr>
+				<th id="on_load_name"></th>
+				<th id="on_load_score"></th>
+			</tr>
+			<tr>
+				<td style="text-align:center;" id="th_element"></td>
+				<td style="text-align:center;" id="th2_element"></td>
+			</tr>
+		</table>
+	</main>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Convert from Fahrenheit to Centigrade</title>
+  <script>
+    function convertToCelsius() {
+      var userInput = parseFloat(document.getElementById('wow2').value);
+      var celsius = ((userInput - 32) * 5 / 9);
+
+      document.getElementById('wow').innerHTML = "Your input was " + userInput + " in Fahrenheit and we converted that to celsius and the answer is " + celsius;
+
+    }
+  </script>
+</head>
+
+<body>
+  <main>
+    <h1>Thanks for using the temperature converter</h1>
+    <form>
+      <label for="">Enter Fahrenheit temperature here.</label><input id="wow2" type="text" name="" value="">
+      <br>
+      <button type="button" name="button" onclick="convertToCelsius()">Submit</button>
+      <p id="wow"></p>
+    </form>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Clock</title>
+  <link rel="stylesheet" href="clock.css">
+  <script src="library_event.js"></script>
+  <script src="clock.js"></script>
+</head>
+
+<body>
+  <main>
+    <h1>Digital clock with stopwatch</h1>
+    <fieldset>
+      <legend>Clock</legend>
+      <span id="hours">&nbsp;</span>:
+      <span id="minutes">&nbsp;</span>:
+      <span id="seconds">&nbsp;</span>&nbsp;
+      <span id="ampm">&nbsp;</span>
+    </fieldset>
+
+    <fieldset>
+      <legend>Stop Watch</legend>
+      <a href="#" onclick="start()" id="start">Start</a>&nbsp;
+      <a href="#" onclick="stop()" id="stop">Stop</a>&nbsp;
+      <a href="#" onclick="reset()" id="reset">Reset</a>&nbsp;
+      <span id="area">00:00:000</span>
+
+
+    </fieldset>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript">
+    function calcAvg() {
+      let newValue;
+      let array = new Array();
+      for (i = 0; i < 5; i++) {
+        array[i] = [parseFloat(document.getElementById(i).value)];
+      }
+      newValue = parseFloat(array[0]) + parseFloat(array[1]) + parseFloat(array[2]) + parseFloat(array[3]) + parseFloat(array[4]);
+      let averagedValue = newValue / 5;
+
+      document.getElementById("output").innerHTML = "The sumed value of this is " + newValue + ".<br>\n\n\n\nThe average of these numbers is " + averagedValue;
+    }
+  </script>
+</head>
+
+<body>
+  <form>
+    <label for="">Num#1</label><input id="0" type="text" name="" value="0"><br>
+    <label for="">Num#2</label><input id="1" type="text" name="" value="0"><br>
+    <label for="">Num#3</label><input id="2" type="text" name="" value="0"><br>
+    <label for="">Num#4</label><input id="3" type="text" name="" value="0"><br>
+    <label for="">Num#5</label><input id="4" type="text" name="" value="0"><br>
+  </form>
+  <input type="submit" name="Submit" value="Submit" onclick="calcAvg()">
+
+  <p id="output"></p>
+</body>
+
+</html>

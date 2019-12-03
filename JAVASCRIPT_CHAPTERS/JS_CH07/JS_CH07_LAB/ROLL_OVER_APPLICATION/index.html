@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ROLL OVER</title>
+  <style media="screen">
+    .box {
+      border: 2px solid blue;
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .images_ordered {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .images_ordered img {
+      padding: 10px 10px;
+    }
+  </style>
+  <script type="text/javascript">
+    var $ = function(id) {
+      return document.getElementById(id);
+    };
+
+    let changeIMG1 = function() {
+      $('1').src = "images/deer.jpg"
+    }
+
+    let changeIMG1out = function() {
+      $('1').src = 'images/bison.jpg';
+    }
+
+    let changeIMG2 = function() {
+      $('2').src = "images/hero.jpg"
+
+    }
+    let changeIMG2out = function() {
+      $('2').src = 'images/release.jpg';
+
+    }
+  </script>
+</head>
+
+<body>
+  <div class="box">
+    <h1>Fishing Images</h1>
+    <p>Move your mouse over an image and back out of the image to restore the original image.</p>
+    <div class="images_ordered">
+      <img id="1" onmouseover="changeIMG1()" onmouseout="changeIMG1out()" src="images/bison.jpg" alt="">
+      <img id="2" onmouseover="changeIMG2()" onmouseout="changeIMG2out()"src="images/release.jpg" alt="">
+    </div>
+  </div>
+</body>
+
+</html>
