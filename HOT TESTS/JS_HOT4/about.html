@@ -7,13 +7,9 @@
   <title>MY GYM</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <style media="screen">
-    .img-fluid {
-      max-width: 100%;
-      height: auto;
-    }
-
-    #slides img {
-      display: none;
+    .img-thumbnail {
+      width: 192px;
+      height: 131.17px;
     }
   </style>
 
@@ -43,23 +39,28 @@
       </ul>
     </div>
   </nav>
-  <div class="container">
+  <div class="container" style="display: flex; flex-direction:row">
+    <div class="row" style="display: flex; flex-direction:column;">
+      <div class="col-sm">
+        <a href="jack" class="wow" title="" id="img/before-1.jpg"><img src="img/before-1.jpg" alt="..." class="img-thumbnail"></a>
+      </div>
+      <div class="col-sm">
+        <a href="steve" class="wow" title="steve" id="img/before-2.jpg"><img src="img/before-2.jpg" alt="..." class="img-thumbnail"></a>
+      </div>
+      <div class="col-sm">
+        <a href="bob" class="wow" title="bob" id="img/before-3.jpg"><img src="img/before-3.jpg" alt="..." class="img-thumbnail"></a>
+      </div>
+      <div class="col-sm">
+        <a href="james" class="wow" title="james" id="img/before-4.jpg"><img src="img/before-4.jpg" alt="..." class="img-thumbnail"></a>
+      </div>
+      <div class="col-sm">
+        <a href="billy" class="wow" id="img/before-5.jpg"><img src="img/before-5.jpg" alt="..." class="img-thumbnail"></a>
+      </div>
+    </div>
     <div class="row">
-      <div class="col-sm">
-        <img src="img/gym-1.jpg" id='slide' alt="">
-        <div id="slides">
-          <img src="img/gym-1.jpg" alt="">
-          <img src="img/gym-2.jpg" alt="">
-          <img src="img/gym-3.jpg" alt="">
-          <img src="img/gym-4.jpg" alt="">
-          <img src="img/gym-5.jpg" alt="">
-        </div>
-      </div>
-      <div class="col-sm">
-        Welcome To our GYM!
-      </div>
-      <div class="col-sm">
-        <button type="button" name="button">JOIN NOW</button>
+      <div class="col-md-12">
+        <h1 id="replace">Jack</h1>
+        <img class="col-md-12" src="img/before-1.jpg" id='holder' alt="">
       </div>
     </div>
   </div>
@@ -70,6 +71,23 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="home_page.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.wow').click(function(evt) {
+      let gottenid = $(this).attr('id');
+      let gottencaption = $(this).attr('href');
+      evt.preventDefault();
+      $('#holder').effect("bounce", "slow");
+      $('#replace').fadeOut(100, function() {
+        $('#replace').text(gottencaption).fadeIn();
+      });
+      $('#holder').attr('src', gottenid);
+      // $('#holder').fadeOut(500, function() {
+
+      // })
+    });
+  });
+</script>
 
 </html>

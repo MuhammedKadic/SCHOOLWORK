@@ -44,25 +44,20 @@
     </div>
   </nav>
   <div class="container">
+    <h1>CLICK ONE OF THE HEADINGS BELOW FOR A SUMMARY</h1>
+    <h1 id="error"></h1>
     <div class="row">
       <div class="col-sm">
-        <img src="img/gym-1.jpg" id='slide' alt="">
-        <div id="slides">
-          <img src="img/gym-1.jpg" alt="">
-          <img src="img/gym-2.jpg" alt="">
-          <img src="img/gym-3.jpg" alt="">
-          <img src="img/gym-4.jpg" alt="">
-          <img src="img/gym-5.jpg" alt="">
-        </div>
+        <form class="" action="" id="form" method="post">
+          <label for="height">Height(inches only):</label><input type="text" name="height" id="val2" value="" required><br>
+          <label for="weight">Weight(pounds only):</label><input type="text" name="weight" id="val" value="" required><br>
+          <button type="submit" id="calcbutton" name="button">Caluclate</button>
+        </form>
       </div>
       <div class="col-sm">
-        Welcome To our GYM!
-      </div>
-      <div class="col-sm">
-        <button type="button" name="button">JOIN NOW</button>
+        <p>BMI: <span id='calculatedBMI'>Press Calculate</span></p>
       </div>
     </div>
-  </div>
 </body>
 
 <!-- Optional JavaScript -->
@@ -70,6 +65,31 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="home_page.js" charset="utf-8"></script>
+<script type="text/javascript">
+  $(document).ready(function(evt) {
+    $('#calcbutton').click(function(evt) {
+      let poundInput = $('#val').val();
+      let heightInput = $('#val2').val();
+      evt.preventDefault();
+      if (poundInput == "" || heightInput == "") {
+        $('#error').css('display', "inline");
+
+        $('#error').text('PLEASE TYPE IN NUMBERS NOT TEXT');
+
+        $('#error').css('display', "inline");
+      } else if (isNaN(poundInput) || isNaN(heightInput)) {
+        $('#error').css('display', "inline");
+
+        $('#error').text('PLEASE TYPE IN NUMBERS NOT TEXT');
+      } else {
+        // Formula: 703 x weight (lbs) / [height (in)]2
+        let caluclatedBMI = (703 * poundInput) / (heightInput * heightInput);
+        $('#error').css('display', "none");
+        $('#calculatedBMI').text(caluclatedBMI);
+        console.log(caluclatedBMI);
+      }
+    });
+  });
+</script>
 
 </html>
